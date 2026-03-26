@@ -1,4 +1,4 @@
-<h1 align="center">Awesome-VLM-Streaming-Video</h1>
+# Awesome-VLM-Streaming-Video
 
 ## 📒 Introduction
 
@@ -91,45 +91,52 @@
 
 ## Streaming with Thinking
 
-|Date|Title|Paper|Code|Comment|
-|:---:|:---:|:---:|:---:|:---:|
-|2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models| [[pdf]](https://arxiv.org/pdf/2603.02872) |[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|  - |
-|2026.03|Thinking in Streaming Video| [[pdf]](https://arxiv.org/pdf/2603.12938) |[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|  - |
-|2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously| [[pdf]](https://arxiv.org/pdf/2603.12262) |[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|  - |
-|2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs| [[pdf]](https://arxiv.org/pdf/2603.11896) |[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|  - |
+
+| Date    | Title                                                                                               | Paper                                     | Code                                                               | Comment |
+| ------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------ | ------- |
+| 2026.03 | Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models             | [[pdf]](https://arxiv.org/pdf/2603.02872) | [[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) | -       |
+| 2026.03 | Thinking in Streaming Video                                                                         | [[pdf]](https://arxiv.org/pdf/2603.12938) | [[GitHub]](https://github.com/johncaged/ThinkStream)               | -       |
+| 2026.03 | Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously                              | [[pdf]](https://arxiv.org/pdf/2603.12262) | [[GitHub]](https://github.com/1ranGuan/VST)                        | -       |
+| 2026.03 | Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs | [[pdf]](https://arxiv.org/pdf/2603.11896) | [[GitHub]](https://github.com/wl666hhh/Think_While_Watching)       | -       |
+
 
 ## Benchmarks
 
-|Date|Title|Paper|Code|Comment|
-|:---:|:---:|:---:|:---:|:---:|
-|2026.03|StreamingEval: A Unified Evaluation Protocol towards Realistic Streaming Video Understanding| [[pdf]](https://arxiv.org/pdf/2603.21493) |[[GitHub]](https://github.com/wwgTang-111/StreamingEval1) ![](https://img.shields.io/github/stars/wwgTang-111/StreamingEval1.svg?style=social)|  - |
-|2026.01|PhoStream: Benchmarking Real-World Streaming for Omnimodal Assistants in Mobile Scenarios| [[pdf]](https://arxiv.org/pdf/2601.22575) |[[GitHub]](https://github.com/Lucky-Lance/PhoStream) ![](https://img.shields.io/github/stars/Lucky-Lance/PhoStream.svg?style=social)|  - |
-|2025.12|StreamEQA: Towards Streaming Video Understanding for Embodied Scenarios| [[pdf]](https://arxiv.org/pdf/2512.04451) |[[GitHub]](https://github.com/MrYF-Wang/StreamEQA) ![](https://img.shields.io/github/stars/MrYF-Wang/StreamEQA.svg?style=social)|  - |
-|2025.12|StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos| [[pdf]](https://arxiv.org/pdf/2512.01707) |[[GitHub]](https://github.com/daeunni/StreamGaze) ![](https://img.shields.io/github/stars/daeunni/StreamGaze.svg?style=social)|  - |
-|2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video| [[pdf]](https://arxiv.org/pdf/2510.14560) |[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|  - |
-|2025.07|OST-Bench: Evaluating the Capabilities of MLLMs in Online Spatio-temporal Scene Understanding| [[pdf]](https://arxiv.org/pdf/2507.07984) |[[GitHub]](https://github.com/InternRobotics/OST-Bench) ![](https://img.shields.io/github/stars/InternRobotics/OST-Bench.svg?style=social)|  - |
-|2025.07|ProactiveVideoQA: A Comprehensive Benchmark Evaluating Proactive Interactions in Video Large Language Models| [[pdf]](https://arxiv.org/pdf/2507.09313) |[[GitHub]](https://github.com/yellow-binary-tree/ProactiveVideoQA) ![](https://img.shields.io/github/stars/yellow-binary-tree/ProactiveVideoQA.svg?style=social)|  - |
-|2025.05|RTV-Bench: Benchmarking MLLM Continuous Perception, Understanding and Reasoning through Real-Time Video| [[pdf]](https://arxiv.org/pdf/2505.02064) |[[GitHub]](https://github.com/LJungang/RTV-Bench) ![](https://img.shields.io/github/stars/LJungang/RTV-Bench.svg?style=social)|  - |
-|2025.04|LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale| [[pdf]](https://arxiv.org/pdf/2504.16030) |[[GitHub]](https://github.com/showlab/livecc) ![](https://img.shields.io/github/stars/showlab/livecc.svg?style=social)|  - |
-|2025.03|OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming Video Contexts| [[pdf]](https://arxiv.org/pdf/2503.22952) |[[GitHub]](https://github.com/OmniMMI/M4) ![](https://img.shields.io/github/stars/OmniMMI/M4.svg?style=social)|  - |
-|2025.02|SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding| [[pdf]](https://arxiv.org/pdf/2502.10810) |[[GitHub]](https://github.com/sotayang/SVBench) ![](https://img.shields.io/github/stars/sotayang/SVBench.svg?style=social)|  - |
-|2025.01|Online Video Understanding: OVBench and VideoChat-Online| [[pdf]](https://arxiv.org/pdf/2501.00584) |[[GitHub]](https://github.com/MCG-NJU/VideoChat-Online) ![](https://img.shields.io/github/stars/MCG-NJU/VideoChat-Online.svg?style=social)|  - |
-|2025.01|OVO-Bench: How Far is Your Video-LLMs from Real-World Online Video Understanding?| [[pdf]](https://arxiv.org/pdf/2501.05510) |[[GitHub]](https://github.com/JoeLeelyf/OVO-Bench) ![](https://img.shields.io/github/stars/JoeLeelyf/OVO-Bench.svg?style=social)|  - |
-|2024.11|StreamingBench: Assessing the Gap for MLLMs to Achieve Streaming Video Understanding| [[pdf]](https://arxiv.org/pdf/2411.03628) |[[GitHub]](https://github.com/THUNLP-MT/StreamingBench) ![](https://img.shields.io/github/stars/THUNLP-MT/StreamingBench.svg?style=social)|  - |
-|2024.10|TemporalBench: Benchmarking Fine-grained Temporal Understanding for Multimodal Video Models| - | - |  - |
-|2024.07|What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction| [[pdf]](https://arxiv.org/pdf/2407.08101) |[[GitHub]](https://github.com/Qualcomm-AI-research/FitCoach) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/FitCoach.svg?style=social)|  - |
+
+| Date    | Title                                                                                                        | Paper                                     | Code                                                               | Comment |
+| ------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | ------------------------------------------------------------------ | ------- |
+| 2026.03 | PEARL: Personalized Video Understanding                                                                      | [[pdf]](https://arxiv.org/pdf/2603.20422) | [[GitHub]](https://github.com/Yuanhong-Zheng/PEARL)                | -       |
+| 2026.03 | StreamingEval: A Unified Evaluation Protocol towards Realistic Streaming Video Understanding                 | [[pdf]](https://arxiv.org/pdf/2603.21493) | [[GitHub]](https://github.com/wwgTang-111/StreamingEval1)          | -       |
+| 2026.01 | PhoStream: Benchmarking Real-World Streaming for Omnimodal Assistants in Mobile Scenarios                    | [[pdf]](https://arxiv.org/pdf/2601.22575) | [[GitHub]](https://github.com/Lucky-Lance/PhoStream)               | -       |
+| 2025.12 | StreamEQA: Towards Streaming Video Understanding for Embodied Scenarios                                      | [[pdf]](https://arxiv.org/pdf/2512.04451) | [[GitHub]](https://github.com/MrYF-Wang/StreamEQA)                 | -       |
+| 2025.12 | StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos                   | [[pdf]](https://arxiv.org/pdf/2512.01707) | [[GitHub]](https://github.com/daeunni/StreamGaze)                  | -       |
+| 2025.10 | Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video                                                  | [[pdf]](https://arxiv.org/pdf/2510.14560) | [[GitHub]](https://github.com/zhangyl4/EyeWO)                      | -       |
+| 2025.07 | OST-Bench: Evaluating the Capabilities of MLLMs in Online Spatio-temporal Scene Understanding                | [[pdf]](https://arxiv.org/pdf/2507.07984) | [[GitHub]](https://github.com/InternRobotics/OST-Bench)            | -       |
+| 2025.07 | ProactiveVideoQA: A Comprehensive Benchmark Evaluating Proactive Interactions in Video Large Language Models | [[pdf]](https://arxiv.org/pdf/2507.09313) | [[GitHub]](https://github.com/yellow-binary-tree/ProactiveVideoQA) | -       |
+| 2025.05 | RTV-Bench: Benchmarking MLLM Continuous Perception, Understanding and Reasoning through Real-Time Video      | [[pdf]](https://arxiv.org/pdf/2505.02064) | [[GitHub]](https://github.com/LJungang/RTV-Bench)                  | -       |
+| 2025.04 | LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale                                      | [[pdf]](https://arxiv.org/pdf/2504.16030) | [[GitHub]](https://github.com/showlab/livecc)                      | -       |
+| 2025.03 | OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming Video Contexts                       | [[pdf]](https://arxiv.org/pdf/2503.22952) | [[GitHub]](https://github.com/OmniMMI/M4)                          | -       |
+| 2025.02 | SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding                    | [[pdf]](https://arxiv.org/pdf/2502.10810) | [[GitHub]](https://github.com/sotayang/SVBench)                    | -       |
+| 2025.01 | Online Video Understanding: OVBench and VideoChat-Online                                                     | [[pdf]](https://arxiv.org/pdf/2501.00584) | [[GitHub]](https://github.com/MCG-NJU/VideoChat-Online)            | -       |
+| 2025.01 | OVO-Bench: How Far is Your Video-LLMs from Real-World Online Video Understanding?                            | [[pdf]](https://arxiv.org/pdf/2501.05510) | [[GitHub]](https://github.com/JoeLeelyf/OVO-Bench)                 | -       |
+| 2024.11 | StreamingBench: Assessing the Gap for MLLMs to Achieve Streaming Video Understanding                         | [[pdf]](https://arxiv.org/pdf/2411.03628) | [[GitHub]](https://github.com/THUNLP-MT/StreamingBench)            | -       |
+| 2024.07 | What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction                  | [[pdf]](https://arxiv.org/pdf/2407.08101) | [[GitHub]](https://github.com/Qualcomm-AI-research/FitCoach)       | -       |
+
 
 ## Training Datasets
 
-|Date|Title|Paper|Code|Comment|
-|:---:|:---:|:---:|:---:|:---:|
-|2026.01|ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding| [[pdf]](https://arxiv.org/pdf/2601.10323) |[[GitHub]](https://github.com/Eureka-Maggie/ROMA) ![](https://img.shields.io/github/stars/Eureka-Maggie/ROMA.svg?style=social)|  - |
-|2025.12|Streaming Video Instruction Tuning| [[pdf]](https://arxiv.org/pdf/2512.21334) |[[GitHub]](https://github.com/maifoundations/Streamo) ![](https://img.shields.io/github/stars/maifoundations/Streamo.svg?style=social)|  - |
-|2025.12|MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning| [[pdf]](https://arxiv.org/pdf/2512.06810) |[[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) ![](https://img.shields.io/github/stars/yellow-binary-tree/MMDuet2.svg?style=social)|  - |
-|2025.11|LiveStar: Live Streaming Assistant for Real-World Online Video Understanding| [[pdf]](https://arxiv.org/pdf/2511.05299) |[[GitHub]](https://github.com/sotayang/LiveStar) ![](https://img.shields.io/github/stars/sotayang/LiveStar.svg?style=social)|  - |
-|2025.11|VideoLLM Knows When to Speak: Enhancing Time-Sensitive Video Comprehension with Video-Text Duet Interaction Format| [[pdf]](https://arxiv.org/pdf/2411.17991) |[[GitHub]](https://github.com/yellow-binary-tree/mmduet) ![](https://img.shields.io/github/stars/yellow-binary-tree/mmduet.svg?style=social)|  - |
-|2025.10|StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA| [[pdf]](https://arxiv.org/pdf/2510.25332) |[[GitHub]](https://github.com/Fleeting-hyh/StreamingCoT) ![](https://img.shields.io/github/stars/Fleeting-hyh/StreamingCoT.svg?style=social)|  - |
-|2025.10|StreamingVLM: Real-Time Understanding for Infinite Video Streams| [[pdf]](https://arxiv.org/pdf/2510.09608) |[[GitHub]](https://github.com/mit-han-lab/streaming-vlm) ![](https://img.shields.io/github/stars/mit-han-lab/streaming-vlm.svg?style=social)|  - |
-|2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video| [[pdf]](https://arxiv.org/pdf/2510.14560) |[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|  - |
-|2025.06|Proactive Assistant Dialogue Generation from Streaming Egocentric Videos| [[pdf]](https://arxiv.org/pdf/2506.05904) |[[GitHub]](https://github.com/pro-assist/ProAssist) ![](https://img.shields.io/github/stars/pro-assist/ProAssist.svg?style=social)|  - |
-|2025.04|LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale| [[pdf]](https://arxiv.org/pdf/2504.16030) |[[GitHub]](https://github.com/showlab/livecc) ![](https://img.shields.io/github/stars/showlab/livecc.svg?style=social)|  - |
+
+| Date    | Title                                                                                                              | Paper                                     | Code                                                      | Comment |
+| ------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- | --------------------------------------------------------- | ------- |
+| 2026.01 | ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding                                 | [[pdf]](https://arxiv.org/pdf/2601.10323) | [[GitHub]](https://github.com/Eureka-Maggie/ROMA)         | -       |
+| 2025.12 | Streaming Video Instruction Tuning                                                                                 | [[pdf]](https://arxiv.org/pdf/2512.21334) | [[GitHub]](https://github.com/maifoundations/Streamo)     | -       |
+| 2025.12 | MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning                     | [[pdf]](https://arxiv.org/pdf/2512.06810) | [[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) | -       |
+| 2025.11 | LiveStar: Live Streaming Assistant for Real-World Online Video Understanding                                       | [[pdf]](https://arxiv.org/pdf/2511.05299) | [[GitHub]](https://github.com/sotayang/LiveStar)          | -       |
+| 2025.11 | VideoLLM Knows When to Speak: Enhancing Time-Sensitive Video Comprehension with Video-Text Duet Interaction Format | [[pdf]](https://arxiv.org/pdf/2411.17991) | [[GitHub]](https://github.com/yellow-binary-tree/mmduet)  | -       |
+| 2025.10 | StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA       | [[pdf]](https://arxiv.org/pdf/2510.25332) | [[GitHub]](https://github.com/Fleeting-hyh/StreamingCoT)  | -       |
+| 2025.10 | StreamingVLM: Real-Time Understanding for Infinite Video Streams                                                   | [[pdf]](https://arxiv.org/pdf/2510.09608) | [[GitHub]](https://github.com/mit-han-lab/streaming-vlm)  | -       |
+| 2025.10 | Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video                                                        | [[pdf]](https://arxiv.org/pdf/2510.14560) | [[GitHub]](https://github.com/zhangyl4/EyeWO)             | -       |
+| 2025.06 | Proactive Assistant Dialogue Generation from Streaming Egocentric Videos                                           | [[pdf]](https://arxiv.org/pdf/2506.05904) | [[GitHub]](https://github.com/pro-assist/ProAssist)       | -       |
+| 2025.04 | LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale                                            | [[pdf]](https://arxiv.org/pdf/2504.16030) | [[GitHub]](https://github.com/showlab/livecc)             | -       |
+
+
