@@ -1,17 +1,29 @@
-# Awesome-VLM-Streaming-Video
+<div align="center">
+
+# Awesome-VLM-Streaming-Video 🎬
+<img src="https://img.shields.io/github/stars/ydyhello/Awesome-VLM-Streaming-Video.svg?style=social">
+<img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg">
+<a href="https://github.com/ydyhello/Awesome-VLM-Streaming-Video/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-red"></a>
+<a href="https://github.com/ydyhello/Awesome-VLM-Streaming-Video/commits/main"><img src="https://img.shields.io/github/last-commit/ydyhello/Awesome-VLM-Streaming-Video?color=blue"></a>
+</div>
 
 ## 📒 Introduction
 
 📚 A curated collection of papers and open-source code repositories dedicated to the application of Vision-Language Models (VLMs) for streaming video.
 
 ## 📖 Contents
-
+- [Project](#project)
 - [Proactive Interaction](#proactive-interaction)
 - [Long-term Memory Management](#long-term-memory-management)
 - [Real-time Inference](#real-time-inference)
 - [Streaming with Thinking](#streaming-with-thinking)
 - [Benchmarks](#benchmarks)
 - [Training Datasets](#training-datasets)
+
+## Project
+|Date|Title|Paper|Code|Comment|
+|:---:|:---:|:---:|:---:|:---:|
+|2025.11|Live VLM WebUI|[[docs]](https://build.nvidia.com/spark/live-vlm-webui/overview)|[[GitHub]](https://github.com/NVIDIA-AI-IOT/live-vlm-webui)![](https://img.shields.io/github/stars/NVIDIA-AI-IOT/live-vlm-webui.svg?style=social)|Real-time Vision Language Model interaction with webcam streaming |
 
 ## Proactive Interaction
 
@@ -98,10 +110,10 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|- |
-|2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|- |
-|2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|- |
-|2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|- |
+|2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|Causal Streaming Attention Masking; Decoupled Cross-Modal Positional Encoding; Parallel Dual KV-Cache Mechanism |
+|2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Streaming Watch-Think-Speak Paradigm; True Training-Inference Consistency; High-Efficiency Streaming Inference |
+|2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|The Video Streaming Thinking Paradigm; Integrated SFT and RL Training |
+|2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Segment-level Memory Notes  |
 
 ## Benchmarks
 
@@ -130,6 +142,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|- |
 |2026.01|ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding|[[pdf]](https://arxiv.org/pdf/2601.10323)|[[GitHub]](https://github.com/Eureka-Maggie/ROMA) ![](https://img.shields.io/github/stars/Eureka-Maggie/ROMA.svg?style=social)|- |
 |2025.12|Streaming Video Instruction Tuning|[[pdf]](https://arxiv.org/pdf/2512.21334)|[[GitHub]](https://github.com/maifoundations/Streamo) ![](https://img.shields.io/github/stars/maifoundations/Streamo.svg?style=social)|- |
 |2025.12|MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning|[[pdf]](https://arxiv.org/pdf/2512.06810)|[[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) ![](https://img.shields.io/github/stars/yellow-binary-tree/MMDuet2.svg?style=social)|- |
