@@ -223,7 +223,6 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.03|StreamingClaw Technical Report|[[pdf]](https://arxiv.org/pdf/2603.22120)|-|Self-planning Scheduling; Tool-augmented Reasoning |
 |2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|Causal Streaming Attention Masking; Decoupled Cross-Modal Positional Encoding; Parallel Dual KV-Cache Mechanism |
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Streaming Watch-Think-Speak Paradigm; True Training-Inference Consistency; High-Efficiency Streaming Inference |
 |2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|The Video Streaming Thinking Paradigm; Integrated SFT and RL Training |
