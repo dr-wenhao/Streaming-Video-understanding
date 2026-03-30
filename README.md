@@ -13,6 +13,7 @@
 
 ## 📖 Contents
 - [🛠️ Project](#️-project)
+- [📋 Technical Report](#-technical-report)
 - [💬 Proactive Interaction](#-proactive-interaction)
   - [Auxiliary Response Head](#auxiliary-response-head)
   - [Generative Token-based Trigger](#generative-token-based-trigger)
@@ -30,17 +31,22 @@
 - [💭 Streaming with Thinking](#-streaming-with-thinking)
 - [📊 Benchmarks](#-benchmarks)
 - [📦 Training Datasets](#-training-datasets)
+- [📝 Survey](#-survey)
+- [🔗 Resources](#-resources)
 
 ## 🛠️ Project
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2025.11|Live VLM WebUI|[[docs]](https://build.nvidia.com/spark/live-vlm-webui/overview)|[[GitHub]](https://github.com/NVIDIA-AI-IOT/live-vlm-webui)![](https://img.shields.io/github/stars/NVIDIA-AI-IOT/live-vlm-webui.svg?style=social)|Real-time Vision Language Model interaction with webcam streaming |
 
+## 📋 Technical Report
+|Date|Title|Paper|Code|Comment|
+|:---:|:---:|:---:|:---:|:---:|
+|2026.02|Seed2.0|[[pdf]](https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed2.0)![](https://img.shields.io/github/stars/ByteDance-Seed/Seed2.0.svg?style=social)|Doubao video calling; OVBench & LiveSports-3K & OVOBench & ODVBench & ViSpeak |
+|2025.12|Seed1.8|[[pdf]](https://github.com/ByteDance-Seed/Seed-1.8/blob/main/Seed-1.8-Modelcard.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed-1.8)![](https://img.shields.io/github/stars/ByteDance-Seed/Seed-1.8.svg?style=social)|Doubao video calling; OVBench & LiveSports-3K & OVOBench & ViSpeak & StreamingBench & OmniMMI |
 ## 💬 Proactive Interaction
 
 ### Auxiliary Response Head
-
-Attach a separate classification or scoring head (distinct from the LM head) to special tokens or frame-level features. A response is triggered when the predicted score exceeds a predefined threshold.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -53,8 +59,6 @@ Attach a separate classification or scoring head (distinct from the LM head) to 
 |2024.11|VideoLLM Knows When to Speak: Enhancing Time-Sensitive Video Comprehension with Video-Text Duet Interaction Format|[[pdf]](https://arxiv.org/pdf/2411.17991)|[[GitHub]](https://github.com/yellow-binary-tree/mmduet) ![](https://img.shields.io/github/stars/yellow-binary-tree/mmduet.svg?style=social)|Informative Head & Relevance Head |
 
 ### Generative Token-based Trigger
-
-Integrate the response/silence decision into the autoregressive generation process, where the LM head generates designated tokens (e.g., \<silent\>, \<response\>, EOS) to determine whether to respond.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -70,8 +74,6 @@ Integrate the response/silence decision into the autoregressive generation proce
 
 ### RL-optimized Proactive Response
 
-Use reinforcement learning (GRPO, RLVR) with explicit reward signals to optimize the timing and quality of proactive responses.
-
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Watch-Think-Speak with \<silent\> & \<response\> Action Tokens; Streaming RLVR (Format + Time + Accuracy Reward) |
@@ -79,8 +81,6 @@ Use reinforcement learning (GRPO, RLVR) with explicit reward signals to optimize
 |2025.12|MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning|[[pdf]](https://arxiv.org/pdf/2512.06810)|[[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) ![](https://img.shields.io/github/stars/yellow-binary-tree/MMDuet2.svg?style=social)|Text-to-Text "NO REPLY" Response Decision with Multi-Objective Reward (PAUC + Replication + In-Span + Prefix) GRPO |
 
 ### Training-free / Feature-based Trigger
-
-Trigger responses using pre-computed embeddings, feature statistics, model confidence, or heuristic rules without training a dedicated trigger module.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -96,8 +96,6 @@ Trigger responses using pre-computed embeddings, feature statistics, model confi
 
 ### Hierarchical Multi-level Memory
 
-Organize memory into explicit multiple levels (e.g., short/mid/long-term) with different granularity and eviction strategies per level.
-
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|CurveStream: Boosting Streaming Video Understanding in MLLMs via Curvature-Aware Hierarchical Visual Memory Management|[[pdf]](https://arxiv.org/pdf/2603.19571)|-|Curvature-Aware Scorer (Motion Variation + Geometric Curvature); EMA-based K-Sigma Dynamic Thresholding; Hierarchical Clear/Blurred/Discard Memory with FIFO Eviction|
@@ -112,8 +110,6 @@ Organize memory into explicit multiple levels (e.g., short/mid/long-term) with d
 |2024.09|VideoLLaMB: Long Streaming Video Understanding with Recurrent Memory Bridges|[[pdf]](https://arxiv.org/pdf/2409.01071)|[[GitHub]](https://github.com/bigai-nlco/VideoLLaMB) ![](https://img.shields.io/github/stars/bigai-nlco/VideoLLaMB.svg?style=social)|Recurrent Memory Bridge with Self-Attention Recursive Update & Retrieval Attention; SceneTiling Semantic Segmentation; Linear Memory Scaling |
 
 ### Token/KV-Cache Compression & Eviction
-
-Compress, prune, merge, quantize, or evict visual tokens and KV-cache entries to maintain bounded memory during streaming.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -133,8 +129,6 @@ Compress, prune, merge, quantize, or evict visual tokens and KV-cache entries to
 
 ### Retrieval-augmented Memory
 
-Store past information (often offloaded to CPU/RAM/disk) and selectively retrieve relevant portions when queries arrive.
-
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Dual-Grained Memory (Streaming Memory + Concept Memory); Concept-Aware Retrieval with Query Rewriting for Personalized Concept Grounding|
@@ -153,8 +147,6 @@ Store past information (often offloaded to CPU/RAM/disk) and selectively retriev
 
 ### Semantic/Textual Abstraction
 
-Convert visual information into compact semantic representations (text summaries, event tuples, reasoning tokens, embeddings) for long-term storage.
-
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Reasoning-Compressed Streaming Memory: Visual Sliding Window + Reasoning Tokens as Long-term Semantic Anchors |
@@ -166,8 +158,6 @@ Convert visual information into compact semantic representations (text summaries
 ## ⚡ Real-time Inference
 
 ### Parallel/Asynchronous Perception-Generation Pipeline
-
-Overlap or parallelize visual perception (encoding) and text generation (decoding) to eliminate sequential blocking, including dual-process architectures and lightweight continuous-perception modules with event-gated model invocation.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -182,8 +172,6 @@ Overlap or parallelize visual perception (encoding) and text generation (decodin
 |2024.06|VideoLLM-online: Online Video Large Language Model for Streaming Video|[[pdf]](https://arxiv.org/pdf/2406.11816)|[[GitHub]](https://github.com/showlab/videollm-online) ![](https://img.shields.io/github/stars/showlab/videollm-online.svg?style=social)|Continuous KV-Cache & Parallelized Encoding-Decoding |
 
 ### Visual Token Compression & Pruning
-
-Reduce per-frame computational cost by compressing, pruning, merging, aggregating, or selectively skipping visual tokens before or during LLM processing.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -203,8 +191,6 @@ Reduce per-frame computational cost by compressing, pruning, merging, aggregatin
 |2024.08|VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation|[[pdf]](https://arxiv.org/pdf/2408.16730)|-|Vision Token Computation Skipping with LayerExpert |
 
 ### KV-Cache Management & Reuse
-
-Efficiently manage KV-cache entries through bounded eviction, incremental updates, cross-turn reuse, selective retrieval, or system-level co-design to maintain constant latency and memory.
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -280,3 +266,11 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2024.11|VideoLLM Knows When to Speak: Enhancing Time-Sensitive Video Comprehension with Video-Text Duet Interaction Format|[[pdf]](https://arxiv.org/pdf/2411.17991)|[[GitHub]](https://github.com/yellow-binary-tree/mmduet) ![](https://img.shields.io/github/stars/yellow-binary-tree/mmduet.svg?style=social)|Multi-Answer Video Grounded QA; Dense Captioning; Temporal Video Grounding |
 |2024.07|What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction|[[pdf]](https://arxiv.org/pdf/2407.08101)|[[GitHub]](https://github.com/Qualcomm-AI-research/FitCoach) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/FitCoach.svg?style=social)| Fitness Activity Recognition and Coaching |
 |2024.06|VideoLLM-online: Online Video Large Language Model for Streaming Video|[[pdf]](https://arxiv.org/pdf/2406.11816)|[[GitHub]](https://github.com/showlab/videollm-online) ![](https://img.shields.io/github/stars/showlab/videollm-online.svg?style=social)|Narration Stream |
+
+## 📝 Survey
+|2024.01|A Survey on Generative AI and LLM for Video Generation, Understanding, and Streaming|[[pdf]](https://arxiv.org/pdf/2404.16038)|-|- |
+
+## 🔗 Resources
+- [JeffShine/Awesome-Streaming-Video-Understanding](https://github.com/JeffShine/Awesome-Streaming-Video-Understanding)
+- [sotayang/Awesome-Streaming-Video-Understanding](https://github.com/sotayang/Awesome-Streaming-Video-Understanding)
+- [LJungang/Awesome-Video-Reasoning-Landscape](https://github.com/LJungang/Awesome-Video-Reasoning-Landscape)
