@@ -12,31 +12,31 @@
 📚 A curated collection of papers and open-source code repositories dedicated to the application of Vision-Language Models (VLMs) for streaming video.
 
 ## 📖 Contents
-- [Project](#project)
-- [Proactive Interaction](#proactive-interaction)
+- [🛠️ Project](#️-project)
+- [💬 Proactive Interaction](#-proactive-interaction)
   - [Auxiliary Response Head](#auxiliary-response-head)
   - [Generative Token-based Trigger](#generative-token-based-trigger)
   - [RL-optimized Proactive Response](#rl-optimized-proactive-response)
   - [Training-free / Feature-based Trigger](#training-free--feature-based-trigger)
-- [Long-term Memory Management](#long-term-memory-management)
+- [🧠 Long-term Memory Management](#-long-term-memory-management)
   - [Hierarchical Multi-level Memory](#hierarchical-multi-level-memory)
   - [Token/KV-Cache Compression & Eviction](#tokenkv-cache-compression--eviction)
   - [Retrieval-augmented Memory](#retrieval-augmented-memory)
   - [Semantic/Textual Abstraction](#semantictextual-abstraction)
-- [Real-time Inference](#real-time-inference)
+- [⚡ Real-time Inference](#-real-time-inference)
   - [Parallel/Asynchronous Perception-Generation Pipeline](#parallelasynchronous-perception-generation-pipeline)
   - [Visual Token Compression & Pruning](#visual-token-compression--pruning)
   - [KV-Cache Management & Reuse](#kv-cache-management--reuse)
-- [Streaming with Thinking](#streaming-with-thinking)
-- [Benchmarks](#benchmarks)
-- [Training Datasets](#training-datasets)
+- [💭 Streaming with Thinking](#-streaming-with-thinking)
+- [📊 Benchmarks](#-benchmarks)
+- [📦 Training Datasets](#-training-datasets)
 
-## Project
+## 🛠️ Project
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2025.11|Live VLM WebUI|[[docs]](https://build.nvidia.com/spark/live-vlm-webui/overview)|[[GitHub]](https://github.com/NVIDIA-AI-IOT/live-vlm-webui)![](https://img.shields.io/github/stars/NVIDIA-AI-IOT/live-vlm-webui.svg?style=social)|Real-time Vision Language Model interaction with webcam streaming |
 
-## Proactive Interaction
+## 💬 Proactive Interaction
 
 ### Auxiliary Response Head
 
@@ -92,7 +92,7 @@ Trigger responses using pre-computed embeddings, feature statistics, model confi
 |2025.08|StreamAgent: Towards Anticipatory Agents for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2508.01875)|-|Reactive/Proactive/Speculative Planning; Heuristic Trigger; Tool-guided Information Hunting |
 
 
-## Long-term Memory Management
+## 🧠 Long-term Memory Management
 
 ### Hierarchical Multi-level Memory
 
@@ -119,6 +119,7 @@ Compress, prune, merge, quantize, or evict visual tokens and KV-cache entries to
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|Proact-VL: A Proactive VideoLLM for Real-Time AI Companions|[[pdf]](https://arxiv.org/pdf/2603.03447)|[[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social)|Dual-Cache (System & Streaming) Sliding Window with Reverse-RoPE Eviction for Infinite Streaming |
 |2026.03|FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.02096)|[[GitHub]](https://github.com/YiwengXie/FluxMem) ![](https://img.shields.io/github/stars/YiwengXie/FluxMem.svg?style=social)|Three-level Hierarchical Memory (Short/Mid/Long-term); Temporal Adjacency Selection & Spatial Domain Consolidation |
+|2026.02|WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs|[[pdf]](https://arxiv.org/pdf/2602.22142)|[[GitHub]](https://github.com/zhangyl4/weavetime) ![](https://img.shields.io/github/stars/zhangyl4/weavetime.svg?style=social)|Coarse-to-Fine Frame-level Filtering & Token-level Similarity Scoring for Selective Historical KV Access |
 |2025.11|LiveStar: Live Streaming Assistant for Real-World Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2511.05299)|[[GitHub]](https://github.com/sotayang/LiveStar) ![](https://img.shields.io/github/stars/sotayang/LiveStar.svg?style=social)|Peak-End Memory Compression & Dual-level Streaming KV Cache |
 |2025.10|StreamingVLM: Real-Time Understanding for Infinite Video Streams|[[pdf]](https://arxiv.org/pdf/2510.09608)|[[GitHub]](https://github.com/mit-han-lab/streaming-vlm) ![](https://img.shields.io/github/stars/mit-han-lab/streaming-vlm.svg?style=social)|Asymmetric KV-Cache with Attention Sinks & Vision/Text Windows; Contiguous RoPE; Overlapped Chunk SFT |
 |2025.10|StreamingTOM: Streaming Token Compression for Efficient Video Understanding|[[pdf]](https://arxiv.org/pdf/2510.18269)|[[GitHub]](https://github.com/YIGE24/StreamingTOM) ![](https://img.shields.io/github/stars/YIGE24/StreamingTOM.svg?style=social)|Causal Temporal Token Reduction (Static-Dynamic DPC & Attention Selection) + Online 4-bit Quantized KV Memory with Representative-Key Retrieval |
@@ -139,13 +140,14 @@ Store past information (often offloaded to CPU/RAM/disk) and selectively retriev
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Dual-Grained Memory (Streaming Memory + Concept Memory); Concept-Aware Retrieval with Query Rewriting for Personalized Concept Grounding|
 |2026.03|WAT: Online Video Understanding Needs Watching Before Thinking|[[pdf]](https://arxiv.org/pdf/2603.13412)|-|Dual-Level Memory: Short-Term FIFO Queue + Long-Term Memory with Redundancy-Aware Eviction Policy |
 |2026.02|Going Down Memory Lane: Scaling Tokens for Video Stream Understanding with Dynamic KV-Cache Memory|[[pdf]](https://arxiv.org/pdf/2602.18434)|[[GitHub]](https://github.com/vatsalag99/MemStream) ![](https://img.shields.io/github/stars/vatsalag99/MemStream.svg?style=social)|Adaptive Key Selection for Sparse Sliding-Window Encoding; Training-free Retrieval MoE via Reciprocal Rank Fusion of Internal & External Signals |
+|2026.02|WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs|[[pdf]](https://arxiv.org/pdf/2602.22142)|[[GitHub]](https://github.com/zhangyl4/weavetime) ![](https://img.shields.io/github/stars/zhangyl4/weavetime.svg?style=social)|Uncertainty-Gated Hierarchical Retrieval with Entropy-Threshold Triggered Past Context Access |
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hash-bit Hamming Clustering &  Weighted Cumulative Sum Early-exit Thresholding for Dynamic KV-Cache Retrieval; Hierarchical Memory Offloading |
 |2025.12|Venus: An Efficient Edge Memory-and-Retrieval System for VLM-based Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2512.07344)|-|Hierarchical Raw Data Layer & Semantic Index Layer; Scene Segmentation and Incremental Clustering for Sparse Memory Construction |
+|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Temporal-Semantic Clustering with Question-Aware Event Compression; Historical Dialogue Retrieval via LLM Selection |
 |2025.11|CacheFlow: Compressive Streaming Memory for Efficient Long-Form Video Understanding|[[pdf]](https://arxiv.org/pdf/2511.13644)|-|Dynamic Token Dropping; GRU-based Compressive Memory; KV Offloading and Rehydration; Consensus-first Retrieval |
 |2025.11|StreamKV: Streaming Video Question-Answering with Segment-based KV Cache Retrieval and Compression|[[pdf]](https://arxiv.org/pdf/2511.07278)|[[GitHub]](https://github.com/sou1p0wer/StreamKV) ![](https://img.shields.io/github/stars/sou1p0wer/StreamKV.svg?style=social)|Cosine Similarity-based Dynamic Semantic Segmentation; Summary-Vector Representative Key Retrieval; Guidance-Prompt-Driven KV Compression with Layer-Adaptive Budget Allocation |
 |2025.10|Recurrent Attention-based Token Selection for Efficient Streaming Video-LLMs|[[pdf]](https://arxiv.org/pdf/2510.17364)|-|Attention-Score-based Visual Token Selection with Recurrent FIFO Token Queue; Maximal Marginal Relevance Caption Retrieval |
 |2025.10|video-SALMONN S: Streaming Audio-Visual LLMs Beyond Length Limits via Memory|[[pdf]](https://arxiv.org/pdf/2510.11129)|[[GitHub]](https://github.com/bytedance/SALMONN/tree/video-salmonn-S) ![](https://img.shields.io/github/stars/bytedance/SALMONN.svg?style=social)|Test-Time Training Fast-Weight MLP as Streaming Memory with Dual (Reconstruction + Long-Span Prediction) Objective; Cosine Similarity Token Discarding; Prompt-Dependent Modality-Aware KV-Cache Chunk Reading |
-|2025.06|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Temporal-Semantic Clustering with Question-Aware Event Compression; Historical Dialogue Retrieval via LLM Selection |
 |2025.06|Flash-VStream: Efficient Real-Time Understanding for Long Video Streams|[[pdf]](https://arxiv.org/pdf/2506.23825)|[[GitHub]](https://github.com/IVGSZ/Flash-VStream) ![](https://img.shields.io/github/stars/IVGSZ/Flash-VStream.svg?style=social)|K-means Clustered Context Synopsis Memory & Feature-Centric Detail Augmentation Memory with Disk-offloadable Feature Bank |
 |2025.03|Streaming Video Question-Answering with In-context Video KV-Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2503.00540)|[[GitHub]](https://github.com/Becomebright/ReKV) ![](https://img.shields.io/github/stars/Becomebright/ReKV.svg?style=social)|Sliding-Window Encoding with KV-Cache Offloading to RAM/Disk; Internal (Self-Attention Key Averaging) & External (CLIP Cosine Similarity) Frame-level Retrieval |
 
@@ -161,7 +163,7 @@ Convert visual information into compact semantic representations (text summaries
 |2025.06|Proactive Assistant Dialogue Generation from Streaming Egocentric Videos|[[pdf]](https://arxiv.org/pdf/2506.05904)|[[GitHub]](https://github.com/pro-assist/ProAssist) ![](https://img.shields.io/github/stars/pro-assist/ProAssist.svg?style=social)|Iterative Progress Summarization as Summary-based Memory Compression |
 |2025.04|Memory-efficient Streaming VideoLLMs for Real-time Procedural Video Understanding|[[pdf]](https://arxiv.org/pdf/2504.13915)|[[GitHub]](https://github.com/dibschat/ProVideLLM) ![](https://img.shields.io/github/stars/dibschat/ProVideLLM.svg?style=social)|Multimodal Interleaved Cache: Online Verbalization of Visual-to-Text for Long-term & Short-term Visual Tokens |
 
-## Real-time Inference
+## ⚡ Real-time Inference
 
 ### Parallel/Asynchronous Perception-Generation Pipeline
 
@@ -191,6 +193,7 @@ Reduce per-frame computational cost by compressing, pruning, merging, aggregatin
 |2026.01|QueryStream: Advancing Streaming Video Understanding with Query-Aware Pruning and Proactive Response|[[pdf]](https://openreview.net/pdf?id=738HjJEbml)|-|Query-Aware Differential Pruning (QDP) & Relevance-Triggered Active Response (RTAR) Scheduling |
 |2025.12|StreamingAssistant: Efficient Visual Token Pruning for Accelerating Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2512.12560)|-|Checkerboard-Masked Parallel Spatial Pruning with Adjacency-Constrained Redundancy; Query-Agnostic Continuous Pre-Pruning Pipeline |
 |2025.12|Accelerating Streaming Video Large Language Models via Hierarchical Token Compression|[[pdf]](https://arxiv.org/pdf/2512.00891)|[[GitHub]](https://github.com/lern-to-write/STC) ![](https://img.shields.io/github/stars/lern-to-write/STC.svg?style=social)|Hierarchical Token Compression: ViT Cache-Aware Selective Computation & Dual-Anchor Novelty Pruning |
+|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Temporal-Semantic Clustering with Question-Aware Event Compression for Streaming Token Reduction |
 |2025.10|Recurrent Attention-based Token Selection for Efficient Streaming Video-LLMs|[[pdf]](https://arxiv.org/pdf/2510.17364)|-|Attention-based Visual Token Compression & Caption-only Question Answering |
 |2025.09|StreamForest: Efficient Online Video Understanding with Persistent Event Memory|[[pdf]](https://arxiv.org/pdf/2509.24871)|[[GitHub]](https://github.com/MCG-NJU/StreamForest) ![](https://img.shields.io/github/stars/MCG-NJU/StreamForest.svg?style=social)|Fixed Token Budget Cap for Stable Latency; Lightweight Memory Update |
 |2025.04|Memory-efficient Streaming VideoLLMs for Real-time Procedural Video Understanding|[[pdf]](https://arxiv.org/pdf/2504.13915)|[[GitHub]](https://github.com/dibschat/ProVideLLM) ![](https://img.shields.io/github/stars/dibschat/ProVideLLM.svg?style=social)|Detection-aware QFormer Visual Token Compression; Causal K-V Cache Streaming |
@@ -208,6 +211,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2026.03|Em-Garde: A Propose-Match Framework for Proactive Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.19054)|[[GitHub]](https://github.com/air-embodied-brain/Em-Garde) ![](https://img.shields.io/github/stars/air-embodied-brain/Em-Garde.svg?style=social)|Proposal-based Embedding Matching (Instruction → Visual Proposal → Cosine Similarity) & Visual Encoding Cache|
 |2026.03|Proact-VL: A Proactive VideoLLM for Real-Time AI Companions|[[pdf]](https://arxiv.org/pdf/2603.03447)|[[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social)|Chunk-wise Decide-Then-Generate Pipeline with Dual-Cache (Persistent System + Dynamic Streaming); Oldest-20% Eviction with RoPE Correction |
 |2026.01|HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2601.14724)|[[GitHub]](https://github.com/haowei-freesky/HERMES) ![](https://img.shields.io/github/stars/haowei-freesky/HERMES.svg?style=social)|KV-Cache Reuse for Instant Query Response; Hierarchical Token Compression within Fixed Cache Budget |
+|2026.02|WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs|[[pdf]](https://arxiv.org/pdf/2602.22142)|[[GitHub]](https://github.com/zhangyl4/weavetime) ![](https://img.shields.io/github/stars/zhangyl4/weavetime.svg?style=social)|PCDF-Cache (Past-Current Dynamic Focus Cache) with Uncertainty-Gated Selective Access to Historical KV Representations |
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hardware-Software Co-design with Dynamic KV Cache Retrieval Engine Accelerator; Pipelined KV Prediction-Retrieval Overlapped with LLM Computation |
 |2025.12|Venus: An Efficient Edge Memory-and-Retrieval System for VLM-based Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2512.07344)|-|Edge-Cloud Disaggregated Architecture; Edge-side Memory Construction & Keyframe Retrieval with Adaptive Frame Budget |
 |2025.11|CacheFlow: Compressive Streaming Memory for Efficient Long-Form Video Understanding|[[pdf]](https://arxiv.org/pdf/2511.13644)|-|Online Per-frame Dynamic Token Dropping; Fixed-size Block Packing; Bounded Local-Plus-Retrieved Attention |
@@ -219,7 +223,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2025.05|LiveVLM: Efficient Online Video Understanding via Streaming-Oriented KV Cache and Retrieval|[[pdf]](https://arxiv.org/pdf/2505.15269)|-|Pre-generated Video KV Cache; Mean-pooled Query-Key Chunk Retrieval with FIFO KV Chunk Management |
 |2025.03|Streaming Video Question-Answering with In-context Video KV-Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2503.00540)|[[GitHub]](https://github.com/Becomebright/ReKV) ![](https://img.shields.io/github/stars/Becomebright/ReKV.svg?style=social)|Multi-Process Parallel Encoding-Answering; Sliding-Window Attention for Stable-Latency Incremental Processing |
 
-## Streaming with Thinking
+## 💭 Streaming with Thinking
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -228,7 +232,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|The Video Streaming Thinking Paradigm; Integrated SFT and RL Training |
 |2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Segment-level Memory Notes  |
 
-## Benchmarks
+## 📊 Benchmarks
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -237,6 +241,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2026.01|PhoStream: Benchmarking Real-World Streaming for Omnimodal Assistants in Mobile Scenarios|[[pdf]](https://arxiv.org/pdf/2601.22575)|[[GitHub]](https://github.com/Lucky-Lance/PhoStream) ![](https://img.shields.io/github/stars/Lucky-Lance/PhoStream.svg?style=social)| Mobile-centric Scenarios; Perception & Interaction & Planning |
 |2025.12|StreamEQA: Towards Streaming Video Understanding for Embodied Scenarios|[[pdf]](https://arxiv.org/pdf/2512.04451)|[[GitHub]](https://github.com/MrYF-Wang/StreamEQA) ![](https://img.shields.io/github/stars/MrYF-Wang/StreamEQA.svg?style=social)| Embodied scenarios |
 |2025.12|StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos|[[pdf]](https://arxiv.org/pdf/2512.01707)|[[GitHub]](https://github.com/daeunni/StreamGaze) ![](https://img.shields.io/github/stars/daeunni/StreamGaze.svg?style=social)|Gaze-Guided Streaming Data; past & present & proactive |
+|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Hierarchical Streaming Video QA; Basic Perception & Streaming Reasoning & Global Understanding |
 |2025.10|Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?|[[pdf]](https://arxiv.org/pdf/2511.21998)|[[GitHub]](https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/qualcomm_interactive_cooking_eval.svg?style=social)|Qualcomm Interactive Cooking|
 |2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video|[[pdf]](https://arxiv.org/pdf/2510.14560)|[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|Explicit Proactives; Implicit Proactive; Contextual Proactive|
 |2025.07|OST-Bench: Evaluating the Capabilities of MLLMs in Online Spatio-temporal Scene Understanding|[[pdf]](https://arxiv.org/pdf/2507.07984)|[[GitHub]](https://github.com/InternRobotics/OST-Bench) ![](https://img.shields.io/github/stars/InternRobotics/OST-Bench.svg?style=social)|Agent State; Agent Visible Info; Agent-object Spatial Relationship |
@@ -253,7 +258,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2024.07|What to Say and When to Say it: Live Fitness Coaching as a Testbed for Situated Interaction|[[pdf]](https://arxiv.org/pdf/2407.08101)|[[GitHub]](https://github.com/Qualcomm-AI-research/FitCoach) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/FitCoach.svg?style=social)|Fitness Activity Recognition and Coaching |
 |2024.03|MovieChat: From Dense Token to Sparse Memory for Long Video Understanding|[[pdf]](https://arxiv.org/pdf/2307.16449)|[[GitHub]](https://github.com/https://github.com/rese1f/MovieChat) ![](https://img.shields.io/github/stars/rese1f/MovieChat.svg?style=social)|Movies and TV |
 
-## Training Datasets
+## 📦 Training Datasets
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -263,6 +268,7 @@ Efficiently manage KV-cache entries through bounded eviction, incremental update
 |2026.01|ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding|[[pdf]](https://arxiv.org/pdf/2601.10323)|[[GitHub]](https://github.com/Eureka-Maggie/ROMA) ![](https://img.shields.io/github/stars/Eureka-Maggie/ROMA.svg?style=social)|Online Proactive; Online Narration; Reactive QA |
 |2025.12|Streaming Video Instruction Tuning|[[pdf]](https://arxiv.org/pdf/2512.21334)|[[GitHub]](https://github.com/maifoundations/Streamo) ![](https://img.shields.io/github/stars/maifoundations/Streamo.svg?style=social)|Real-time Narration; Event Caption; Action Caption; Event Grounding; Time-sensitive QA |
 |2025.12|MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning|[[pdf]](https://arxiv.org/pdf/2512.06810)|[[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) ![](https://img.shields.io/github/stars/yellow-binary-tree/MMDuet2.svg?style=social)|Scene Segmentation and Captioning; QA Generation; Proactive Dialogue Construction |
+|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Semi-automatic QA Pipeline; 1,088 Videos with 59K Hierarchical QA Pairs (Basic, Streaming, Global) |
 |2025.11|LiveStar: Live Streaming Assistant for Real-World Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2511.05299)|[[GitHub]](https://github.com/sotayang/LiveStar) ![](https://img.shields.io/github/stars/sotayang/LiveStar.svg?style=social)| Real-time Narration Generation; Online Temporal Grounding; Frame-level Dense QA; Contextual Online QA; Multi-turn Interactive QA |
 |2025.10|StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA|[[pdf]](https://arxiv.org/pdf/2510.25332)|[[GitHub]](https://github.com/Fleeting-hyh/StreamingCoT) ![](https://img.shields.io/github/stars/Fleeting-hyh/StreamingCoT.svg?style=social)|Hierarchical Video Dense Captioning; Dynamic Question-Answer Pairs Construction; Multimodal Chain-of-Thought Generation |
 |2025.10|StreamingVLM: Real-Time Understanding for Infinite Video Streams|[[pdf]](https://arxiv.org/pdf/2510.09608)|[[GitHub]](https://github.com/mit-han-lab/streaming-vlm) ![](https://img.shields.io/github/stars/mit-han-lab/streaming-vlm.svg?style=social)|Sports; Narration  |
