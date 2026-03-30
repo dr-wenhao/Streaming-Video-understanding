@@ -214,9 +214,9 @@
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|Causal Streaming Attention Masking; Decoupled Cross-Modal Positional Encoding; Parallel Dual KV-Cache Mechanism |
-|2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Streaming Watch-Think-Speak Paradigm; True Training-Inference Consistency; High-Efficiency Streaming Inference |
-|2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|The Video Streaming Thinking Paradigm; Integrated SFT and RL Training |
-|2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Segment-level Memory Notes  |
+|2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Streaming Watch-Think-Speak Paradigm; Reasoning-Compressed Streaming Memory (RCSM); Streaming RLVR (Format + Time + Accuracy Reward) |
+|2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|The Video Streaming Thinking Paradigm; VKG-based Streaming CoT Data Synthesis; Two-Stage VST-SFT & VST-RL Training |
+|2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Segment-level Streaming Causal Mask & Positional Encoding; Three-Stage CoT Training; Concurrent Watch-Think Pipeline |
 
 ## 📊 Benchmarks
 
@@ -227,7 +227,6 @@
 |2026.01|PhoStream: Benchmarking Real-World Streaming for Omnimodal Assistants in Mobile Scenarios|[[pdf]](https://arxiv.org/pdf/2601.22575)|[[GitHub]](https://github.com/Lucky-Lance/PhoStream) ![](https://img.shields.io/github/stars/Lucky-Lance/PhoStream.svg?style=social)| Mobile-centric Scenarios; Perception & Interaction & Planning |
 |2025.12|StreamEQA: Towards Streaming Video Understanding for Embodied Scenarios|[[pdf]](https://arxiv.org/pdf/2512.04451)|[[GitHub]](https://github.com/MrYF-Wang/StreamEQA) ![](https://img.shields.io/github/stars/MrYF-Wang/StreamEQA.svg?style=social)| Embodied scenarios |
 |2025.12|StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos|[[pdf]](https://arxiv.org/pdf/2512.01707)|[[GitHub]](https://github.com/daeunni/StreamGaze) ![](https://img.shields.io/github/stars/daeunni/StreamGaze.svg?style=social)|Gaze-Guided Streaming Data; past & present & proactive |
-|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Hierarchical Streaming Video QA; Basic Perception & Streaming Reasoning & Global Understanding |
 |2025.10|Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?|[[pdf]](https://arxiv.org/pdf/2511.21998)|[[GitHub]](https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/qualcomm_interactive_cooking_eval.svg?style=social)|Qualcomm Interactive Cooking|
 |2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video|[[pdf]](https://arxiv.org/pdf/2510.14560)|[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|Explicit Proactives; Implicit Proactive; Contextual Proactive|
 |2025.07|OST-Bench: Evaluating the Capabilities of MLLMs in Online Spatio-temporal Scene Understanding|[[pdf]](https://arxiv.org/pdf/2507.07984)|[[GitHub]](https://github.com/InternRobotics/OST-Bench) ![](https://img.shields.io/github/stars/InternRobotics/OST-Bench.svg?style=social)|Agent State; Agent Visible Info; Agent-object Spatial Relationship |
@@ -268,6 +267,8 @@
 |2024.06|VideoLLM-online: Online Video Large Language Model for Streaming Video|[[pdf]](https://arxiv.org/pdf/2406.11816)|[[GitHub]](https://github.com/showlab/videollm-online) ![](https://img.shields.io/github/stars/showlab/videollm-online.svg?style=social)|Narration Stream |
 
 ## 📝 Survey
+|Date|Title|Paper|Code|Comment|
+|:---:|:---:|:---:|:---:|:---:|
 |2024.01|A Survey on Generative AI and LLM for Video Generation, Understanding, and Streaming|[[pdf]](https://arxiv.org/pdf/2404.16038)|-|- |
 
 ## 🔗 Resources
