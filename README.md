@@ -266,3 +266,6 @@
 - [JeffShine/Awesome-Streaming-Video-Understanding](https://github.com/JeffShine/Awesome-Streaming-Video-Understanding)
 - [sotayang/Awesome-Streaming-Video-Understanding](https://github.com/sotayang/Awesome-Streaming-Video-Understanding)
 - [LJungang/Awesome-Video-Reasoning-Landscape](https://github.com/LJungang/Awesome-Video-Reasoning-Landscape)
+
+## ☎️ We're Hiring!
+We're hiring interns for the TGT program at JD Explore Academy! If you have top-tier publications and are passionate about video understanding and VLMs, please send your resume to: siqingyi.phoebus@jd.com. We'd love to hear from you!
