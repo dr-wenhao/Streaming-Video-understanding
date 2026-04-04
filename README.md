@@ -147,6 +147,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.03|Click-to-Ask: An AI Live Streaming Assistant with Offline Copywriting and Online Interactive QA|[[pdf]](https://arxiv.org/pdf/2603.18649)|-|Streaming Event Segmentation; Event-level Historical Caption Memory; Knowledge Extraction Accelerator|
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Reasoning-Compressed Streaming Memory: Visual Sliding Window + Reasoning Tokens as Long-Term Semantic Anchors |
 |2026.03|Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously|[[pdf]](https://arxiv.org/pdf/2603.12262)|[[GitHub]](https://github.com/1ranGuan/VST) ![](https://img.shields.io/github/stars/1ranGuan/VST.svg?style=social)|Short-Term Visual Sliding Window & Long-Term Textual Streaming-Thought Memory with FIFO Eviction; Recursive Temporal Segmentation |
 |2026.02|Exploring Multimodal LMMs for Online Episodic Memory Question Answering on the Edge|[[pdf]](https://arxiv.org/pdf/2602.22455)|-|Convert Video into a Lightweight Textual Memory |
@@ -159,6 +160,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.03|Click-to-Ask: An AI Live Streaming Assistant with Offline Copywriting and Online Interactive QA|[[pdf]](https://arxiv.org/pdf/2603.18649)|-|Asynchronous Streaming Event Segmentation; Knowledge Extraction Accelerator for Historical Caption Continuation|
 |2026.03|MOSS-Video-Preview|-|[[GitHub]](https://github.com/fnlp-vision/MOSS-Video-Preview) ![](https://img.shields.io/github/stars/fnlp-vision/MOSS-Video-Preview.svg?style=social)|Native Cross-Attention Decoupled Perception-Generation; Asynchronous Non-Blocking Frame Injection with Real-Time Autoregressive Decoding |
 |2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|Parallel Dual KV-Cache with Merge-Generate-Split Loop for Concurrent Encoding-Decoding; Decoupled Cross-Modal RoPE; Near-Zero Time-to-First-Token|
 |2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Threaded Parallel Watch-Think Pipeline with Async Segment Prefetch & Adaptive Attention Backend |
