@@ -63,6 +63,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Unified \<\|silent\|\> Token for Silent Observation with Real-Time QA / Proactive QA / Multi-Response QA; Silent-Speech Balanced Loss |
 |2026.03|StreamingClaw Technical Report|[[pdf]](https://arxiv.org/pdf/2603.22120)|-|Training-Free (Reminder Node); Training-Based (Scenario-Specific Trigger Tokens)|
 |2026.03|STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.27593)|[[GitHub]](https://github.com/interlive-team/STRIDE) ![](https://img.shields.io/github/stars/interlive-team/STRIDE.svg?style=social)|Activation Token Denoising over 0/1/[M]; Sequence Duplication; Selective Re-masking|
 |2026.03|MOSS-Video-Preview|-|[[GitHub]](https://github.com/fnlp-vision/MOSS-Video-Preview) ![](https://img.shields.io/github/stars/fnlp-vision/MOSS-Video-Preview.svg?style=social)|Silence/Speak Mode Transition with Dynamic Self-Correction |
@@ -120,6 +121,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Dual Sliding-Window Context over Recent Video and QA History; Out-of-Window Video Chunks and \<\|silent\|\> Tokens Discarded |
 |2026.04|A Simple Baseline for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2604.02317)|[[GitHub]](https://github.com/EvolvingLMMs-Lab/SimpleStream)![](https://img.shields.io/github/stars/EvolvingLMMs-Lab/SimpleStream.svg?style=social)|Fixed Recent-frame Sliding Window; Old-frame Eviction without External Memory|
 |2026.03|Proact-VL: A Proactive VideoLLM for Real-Time AI Companions|[[pdf]](https://arxiv.org/pdf/2603.03447)|[[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social)|Dual-Cache (System & Streaming) Sliding Window with Reverse-RoPE Eviction for Infinite Streaming |
 |2026.03|STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.27593)|[[GitHub]](https://github.com/interlive-team/STRIDE) ![](https://img.shields.io/github/stars/interlive-team/STRIDE.svg?style=social)|Bounded Visual Cache Eviction; Sliding-window Frame Retention |
@@ -209,6 +211,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Floating Video/QA Sliding Windows with Batched N' Chunk Truncation for Prefix KV-Cache Reuse and Lower TTFT |
 |2026.03|Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism|[[pdf]](https://arxiv.org/pdf/2603.29252)|[[GitHub]](https://github.com/city1517/FlexMem) ![](https://img.shields.io/github/stars/city1517/FlexMem.svg?style=social)|MemIndex with Representative Cache Layer Selection; Last-Token Question Index; Compressed Visual KV-Cache Retrieval|
 |2026.01|HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2601.14724)|[[GitHub]](https://github.com/haowei-freesky/HERMES) ![](https://img.shields.io/github/stars/haowei-freesky/HERMES.svg?style=social)|KV-Cache Reuse for Instant Query Response; Hierarchical Token Compression within Fixed Cache Budget |
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hardware-Software Co-Design with Dynamic KV Cache Retrieval Engine Accelerator; Pipelined KV Prediction-Retrieval Overlapped with LLM Computation |
