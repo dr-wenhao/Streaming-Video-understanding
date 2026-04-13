@@ -32,10 +32,10 @@
   - [Spatial / 3D Memory](#spatial--3d-memory)
   - [Parametric / Fast-weight Memory](#parametric--fast-weight-memory)
 - [⚡ Real-time Inference](#-real-time-inference)
-  - [Concurrent Perception-Generation](#concurrent-perception-generation)
-  - [Event-Gated Sparse Invocation](#event-gated-sparse-invocation)
-  - [Visual Token Compression & Pruning](#visual-token-compression--pruning)
-  - [KV-Cache Management & Reuse](#kv-cache-management--reuse)
+  - [Encoding-Decoding Parallelism](#encoding-decoding-parallelism)
+  - [Selective Model Invocation](#selective-model-invocation)
+  - [Visual Token Reduction](#visual-token-reduction)
+  - [KV-Cache Optimization](#kv-cache-optimization)
 - [💭 Streaming with Thinking](#-streaming-with-thinking)
 - [📊 Benchmarks](#-benchmarks)
 - [📦 Training Datasets](#-training-datasets)
@@ -71,7 +71,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Unified \<\|silent\|\> Token for Silent Observation with Real-Time QA / Proactive QA / Multi-Response QA; Silent-Speech Balanced Loss |
+|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Unified \<\|silent\|\> Token for Silent Observation with Real-Time QA / Proactive QA / Multi-Response QA; Silent-Speech Balanced Loss |
 |2026.03|STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.27593)|[[GitHub]](https://github.com/interlive-team/STRIDE) ![](https://img.shields.io/github/stars/interlive-team/STRIDE.svg?style=social)|Activation Token Denoising over 0/1/[M]; Sequence Duplication; Selective Re-masking|
 |2025.12|Streaming Video Instruction Tuning|[[pdf]](https://arxiv.org/pdf/2512.21334)|[[GitHub]](https://github.com/maifoundations/Streamo) ![](https://img.shields.io/github/stars/maifoundations/Streamo.svg?style=social)|Three-State Response Tokens (\</Silence\>, \</Standby\>,\</Response\>) via Unified Next-Token Prediction; Focal Loss for Response Imbalance |
 |2025.06|Proactive Assistant Dialogue Generation from Streaming Egocentric Videos|[[pdf]](https://arxiv.org/pdf/2506.05904)|[[GitHub]](https://github.com/pro-assist/ProAssist) ![](https://img.shields.io/github/stars/pro-assist/ProAssist.svg?style=social)|Frame-Level [EOS] Silence Prediction with Negative Frame Sub-Sampling |
@@ -136,7 +136,7 @@
 
 |  Date   |                            Title                             |                   Paper                   |                             Code                             |                           Comment                            |
 | :-----: | :----------------------------------------------------------: | :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 2026.04 | AURA: Always-On Understanding and Real-Time Assistance via Video Streams | [[pdf]](https://arxiv.org/pdf/2604.04184) | [[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social) | Dual Sliding-Window Context over Recent Video and QA History; Out-of-Window Video Chunks and \<\|silent\|\> Tokens Discarded |
+| 2026.04 | AURA: Always-On Understanding and Real-Time Assistance via Video Streams | [[pdf]](https://arxiv.org/pdf/2604.04184) | [[GitHub]](https://github.com/aurateam2026/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social) | Dual Sliding-Window Context over Recent Video and QA History; Out-of-Window Video Chunks and \<\|silent\|\> Tokens Discarded |
 | 2026.04 |     A Simple Baseline for Streaming Video Understanding      | [[pdf]](https://arxiv.org/pdf/2604.02317) | [[GitHub]](https://github.com/EvolvingLMMs-Lab/SimpleStream)![](https://img.shields.io/github/stars/EvolvingLMMs-Lab/SimpleStream.svg?style=social) | Fixed Recent-frame Sliding Window; Old-frame Eviction without External Memory |
 | 2026.03 | Proact-VL: A Proactive VideoLLM for Real-Time AI Companions  | [[pdf]](https://arxiv.org/pdf/2603.03447) | [[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social) | Dual-Cache (System & Streaming) Sliding Window with Reverse-RoPE Eviction for Infinite Streaming |
 | 2026.03 | STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding | [[pdf]](https://arxiv.org/pdf/2603.27593) | [[GitHub]](https://github.com/interlive-team/STRIDE) ![](https://img.shields.io/github/stars/interlive-team/STRIDE.svg?style=social) | Bounded Visual Cache Eviction; Sliding-window Frame Retention |
@@ -209,33 +209,26 @@
 
 ## ⚡ Real-time Inference
 
-### Concurrent Perception-Generation
+### Encoding-Decoding Parallelism
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.03|MOSS-Video-Preview|-|[[GitHub]](https://github.com/fnlp-vision/MOSS-Video-Preview) ![](https://img.shields.io/github/stars/fnlp-vision/MOSS-Video-Preview.svg?style=social)|Native Cross-Attention Decoupled Perception-Generation; Asynchronous Non-Blocking Frame Injection with Real-Time Autoregressive Decoding |
 |2026.03|Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models|[[pdf]](https://arxiv.org/pdf/2603.02872)|[[GitHub]](https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS) ![](https://img.shields.io/github/stars/EIT-NLP/StreamingLLM.svg?style=social)|Parallel Dual KV-Cache with Merge-Generate-Split Loop for Concurrent Encoding-Decoding; Decoupled Cross-Modal RoPE; Near-Zero Time-to-First-Token|
 |2026.03|Think While Watching: Online Streaming Segment-Level Memory for Multi-Turn Video Reasoning in MLLMs|[[pdf]](https://arxiv.org/pdf/2603.11896)|[[GitHub]](https://github.com/wl666hhh/Think_While_Watching) ![](https://img.shields.io/github/stars/wl666hhh/Think_While_Watching.svg?style=social)|Threaded Parallel Watch-Think Pipeline with Async Segment Prefetch & Adaptive Attention Backend |
-|2026.03|Em-Garde: A Propose-Match Framework for Proactive Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.19054)|[[GitHub]](https://github.com/air-embodied-brain/Em-Garde) ![](https://img.shields.io/github/stars/air-embodied-brain/Em-Garde.svg?style=social)|Proposal-Based Embedding Matching (Instruction → Visual Proposal → Cosine Similarity) & Visual Encoding Cache|
 |2026.01|Speak While Watching: Unleashing TRUE Real-Time Video Understanding Capability of Multimodal Large Language Models|[[pdf]](https://arxiv.org/pdf/2601.06843)|[[GitHub]](https://github.com/EIT-NLP/Speak-While-Watching) ![](https://img.shields.io/github/stars/EIT-NLP/Speak-While-Watching.svg?style=social)|Decoupled Positional Encoding (Overlapped / Group-Decoupled / Gap-Isolated) for Parallel Perception-Generation Streaming |
-|2025.06|Flash-VStream: Efficient Real-Time Understanding for Long Video Streams|[[pdf]](https://arxiv.org/pdf/2506.23825)|[[GitHub]](https://github.com/IVGSZ/Flash-VStream) ![](https://img.shields.io/github/stars/IVGSZ/Flash-VStream.svg?style=social)|Two-Process Asynchronous Pipeline (Frame Handler & Question Handler) with Shared Flash Memory |
-|2025.03|Streaming Video Question-Answering with In-context Video KV-Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2503.00540)|[[GitHub]](https://github.com/Becomebright/ReKV) ![](https://img.shields.io/github/stars/Becomebright/ReKV.svg?style=social)|Multi-Process Parallel Encoding-Answering; Sliding-Window Attention for Stable-Latency Incremental Processing |
-|2025.01|Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction|[[pdf]](https://arxiv.org/pdf/2501.03218)|[[GitHub]](https://github.com/Mark12Ding/Dispider) ![](https://img.shields.io/github/stars/Mark12Ding/Dispider.svg?style=social)|Dual-LLM Asynchronous Pipeline |
-|2024.06|VideoLLM-online: Online Video Large Language Model for Streaming Video|[[pdf]](https://arxiv.org/pdf/2406.11816)|[[GitHub]](https://github.com/showlab/videollm-online) ![](https://img.shields.io/github/stars/showlab/videollm-online.svg?style=social)|Continuous KV-Cache & Parallelized Encoding-Decoding |
 
-### Event-Gated Sparse Invocation
+### Selective Model Invocation
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2026.03|STRIDE: When to Speak Meets Sequence Denoising for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.27593)|[[GitHub]](https://github.com/interlive-team/STRIDE) ![](https://img.shields.io/github/stars/interlive-team/STRIDE.svg?style=social)|Two-stage Activation-to-Generation Pipeline; Event-gated Downstream Video-LLM Invocation|
-|2026.03|Click-to-Ask: An AI Live Streaming Assistant with Offline Copywriting and Online Interactive QA|[[pdf]](https://arxiv.org/pdf/2603.18649)|-|Asynchronous Streaming Event Segmentation; Knowledge Extraction Accelerator for Historical Caption Continuation|
 |2026.03|Color When It Counts: Grayscale-Guided Online Triggering for Always-On Streaming Video Sensing|[[pdf]](https://arxiv.org/pdf/2603.22466)|[[GitHub]](https://github.com/lvgd/ColorTrigger) ![](https://img.shields.io/github/stars/lvgd/ColorTrigger.svg?style=social)|Windowed Grayscale Affinity Analysis with Quadratic Programming; Credit-Budgeted RGB Activation; Dynamic Token Router with Asymmetric Grayscale and RGB Token Capacity |
 |2026.03|StreamMind: Unlocking Full Frame Rate Streaming Video Dialogue through Event-Gated Cognition|[[pdf]](https://arxiv.org/pdf/2503.06220)|[[GitHub]](https://github.com/xinding-sys/StreamMind) ![](https://img.shields.io/github/stars/xinding-sys/StreamMind.svg?style=social)|SSM-Based Single-Token Perception with Event-Gated Sparse LLM Invocation |
 |2026.01|Event-VStream: Event-Driven Real-Time Understanding for Long Video Streams|[[pdf]](https://arxiv.org/pdf/2601.15655)|-|Boundary-aware Event Pooling; Event-triggered Sparse Decoding; Hysteresis Pacing Control |
 |2025.09|Open-ended Hierarchical Streaming Video Understanding with Vision Language Models|[[pdf]](https://arxiv.org/pdf/2509.12145)|-|Lightweight RNN Streaming Module with Event-Gated Sparse Frozen VLM Invocation |
 |2025.03|LION-FS: Fast & Slow Video-Language Thinker as Online Video Assistant|[[pdf]](https://arxiv.org/pdf/2503.03663)|[[GitHub]](https://github.com/JiuTian-VL/LION-FS) ![](https://img.shields.io/github/stars/JiuTian-VL/LION-FS.svg?style=social)|Routing-Based Response Determination via Fast-Slow Dual-Path; Token Aggregation & Dropping for High-FPS Routing |
 
-### Visual Token Compression & Pruning
+### Visual Token Reduction
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
@@ -243,31 +236,25 @@
 |2026.04|A Simple Baseline for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2604.02317)|[[GitHub]](https://github.com/EvolvingLMMs-Lab/SimpleStream)![](https://img.shields.io/github/stars/EvolvingLMMs-Lab/SimpleStream.svg?style=social)|Fixed Recent-frame Window; Bounded-memory Low-latency Inference|
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Eager Prefill + CUDA Graph Decode-and-Prune |
 |2026.03|FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.02096)|[[GitHub]](https://github.com/YiwengXie/FluxMem) ![](https://img.shields.io/github/stars/YiwengXie/FluxMem.svg?style=social)|Visual Token Compression via TAS & SDC with Otsu-Based Adaptive Thresholding for Latency & Memory Reduction |
-|2026.02|Vista: Scene-Aware Optimization for Streaming Video Question Answering under Post-Hoc Queries|[[pdf]](https://arxiv.org/pdf/2602.08448)|-|Scene-aware Compression for Bounded GPU Memory; Query-time Recall of Top-k Relevant Scenes |
-|2026.02|FreshMem: Brain-Inspired Frequency-Space Hybrid Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2602.01683)|-|Training-free Incremental DFT Memory Update; Adaptive Episode Compression with Controlled Latency Overhead |
-|2026.02|Artic: AI-oriented Real-time Communication for MLLM Video Assistant|[[pdf]](https://arxiv.org/pdf/2602.12641)|[[GitHub]](https://github.com/pku-netvideo/DeViBench) ![](https://img.shields.io/github/stars/pku-netvideo/DeViBench.svg?style=social)|Response Confidence Score-guided Adaptive Bitrate Capping; Grounding-then-Prediction Future Regions with Quantization Parameter-adaptive Encoding |
-|2026.01|QueryStream: Advancing Streaming Video Understanding with Query-Aware Pruning and Proactive Response|[[pdf]](https://openreview.net/pdf?id=738HjJEbml)|-|Query-Aware Differential Pruning (QDP) & Relevance-Triggered Active Response (RTAR) Scheduling |
+|2026.02|QueryStream: Advancing Streaming Video Understanding with Query-Aware Pruning and Proactive Response|[[pdf]](https://openreview.net/pdf?id=738HjJEbml)|-|Query-Aware Differential Pruning (QDP) & Relevance-Triggered Active Response (RTAR) Scheduling |
 |2025.12|StreamingAssistant: Efficient Visual Token Pruning for Accelerating Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2512.12560)|-|Checkerboard-Masked Parallel Spatial Pruning with Adjacency-Constrained Redundancy; Query-Agnostic Continuous Pre-Pruning Pipeline |
 |2025.12|Accelerating Streaming Video Large Language Models via Hierarchical Token Compression|[[pdf]](https://arxiv.org/pdf/2512.00891)|[[GitHub]](https://github.com/lern-to-write/STC) ![](https://img.shields.io/github/stars/lern-to-write/STC.svg?style=social)|Hierarchical Token Compression: ViT Cache-Aware Selective Computation & Dual-Anchor Novelty Pruning |
-|2025.12|CogStream: Context-guided Streaming Video Question Answering|[[pdf]](https://arxiv.org/pdf/2506.10516)|[[GitHub]](https://github.com/LiamZhao326/CogStream) ![](https://img.shields.io/github/stars/LiamZhao326/CogStream.svg?style=social)|Temporal-Semantic Clustering with Question-Aware Event Compression for Streaming Token Reduction |
 |2025.10|Recurrent Attention-based Token Selection for Efficient Streaming Video-LLMs|[[pdf]](https://arxiv.org/pdf/2510.17364)|-|Attention-Based Visual Token Compression & Caption-Only Question Answering |
-|2025.09|StreamForest: Efficient Online Video Understanding with Persistent Event Memory|[[pdf]](https://arxiv.org/pdf/2509.24871)|[[GitHub]](https://github.com/MCG-NJU/StreamForest) ![](https://img.shields.io/github/stars/MCG-NJU/StreamForest.svg?style=social)|Fixed Token Budget Cap for Stable Latency; Lightweight Memory Update |
 |2025.03|VideoScan: Enabling Efficient Streaming Video Understanding via Frame-level Semantic Carriers|[[pdf]](https://arxiv.org/pdf/2503.09387)|[[GitHub]](https://github.com/LyliAgave/VideoScan) ![](https://img.shields.io/github/stars/LyliAgave/VideoScan.svg?style=social)|Single Semantic Carrier per Frame; Prefill-Decode Decoupling; Visual Tokens Discarded after Prefill |
 |2024.08|VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation|[[pdf]](https://arxiv.org/pdf/2408.16730)|-|Vision Token Computation Skipping with LayerExpert |
 
-### KV-Cache Management & Reuse
+### KV-Cache Optimization
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) [[HF]](https://huggingface.co/aurateam/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Floating Video/QA Sliding Windows with Batched N' Chunk Truncation for Prefix KV-Cache Reuse and Lower TTFT |
-|2026.03|Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism|[[pdf]](https://arxiv.org/pdf/2603.29252)|[[GitHub]](https://github.com/city1517/FlexMem) ![](https://img.shields.io/github/stars/city1517/FlexMem.svg?style=social)|MemIndex with Representative Cache Layer Selection; Last-Token Question Index; Compressed Visual KV-Cache Retrieval|
+|2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Floating Video/QA Sliding Windows with Batched N' Chunk Truncation for Prefix KV-Cache Reuse and Lower TTFT |
 |2026.01|HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2601.14724)|[[GitHub]](https://github.com/haowei-freesky/HERMES) ![](https://img.shields.io/github/stars/haowei-freesky/HERMES.svg?style=social)|KV-Cache Reuse for Instant Query Response; Hierarchical Token Compression within Fixed Cache Budget |
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hardware-Software Co-Design with Dynamic KV Cache Retrieval Engine Accelerator; Pipelined KV Prediction-Retrieval Overlapped with LLM Computation |
-|2025.11|LiveStar: Live Streaming Assistant for Real-World Online Video Understanding|[[pdf]](https://arxiv.org/pdf/2511.05299)|[[GitHub]](https://github.com/yzy-bupt/LiveStar) ![](https://img.shields.io/github/stars/yzy-bupt/LiveStar.svg?style=social)|Peak-End Memory Compression & Dual-Level Streaming KV Cache |
 |2025.11|StreamKV: Streaming Video Question-Answering with Segment-based KV Cache Retrieval and Compression|[[pdf]](https://arxiv.org/pdf/2511.07278)|[[GitHub]](https://github.com/sou1p0wer/StreamKV) ![](https://img.shields.io/github/stars/sou1p0wer/StreamKV.svg?style=social)|Sliding-Window Segment Encoding with Immediate Post-Encoding KV Compression |
 |2025.10|StreamingVLM: Real-Time Understanding for Infinite Video Streams|[[pdf]](https://arxiv.org/pdf/2510.09608)|[[GitHub]](https://github.com/mit-han-lab/streaming-vlm) ![](https://img.shields.io/github/stars/mit-han-lab/streaming-vlm.svg?style=social)|Bounded KV-Cache Eviction for Constant Memory; No Redundant Recomputation across Windows |
 |2025.10|StreamingTOM: Streaming Token Compression for Efficient Video Understanding|[[pdf]](https://arxiv.org/pdf/2510.18269)|[[GitHub]](https://github.com/YIGE24/StreamingTOM) ![](https://img.shields.io/github/stars/YIGE24/StreamingTOM.svg?style=social)|Pre-LLM Causal Token Budget Cap for Prefill Acceleration; Post-LLM Quantized Memory with Selective Dequantization |
 |2025.05|LiveVLM: Efficient Online Video Understanding via Streaming-Oriented KV Cache and Retrieval|[[pdf]](https://arxiv.org/pdf/2505.15269)|-|Pre-Generated Video KV Cache; Mean-Pooled Query-Key Chunk Retrieval with FIFO KV Chunk Management |
+|2025.03|Streaming Video Question-Answering with In-context Video KV-Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2503.00540)|[[GitHub]](https://github.com/Becomebright/ReKV) ![](https://img.shields.io/github/stars/Becomebright/ReKV.svg?style=social)|Multi-Process Parallel Encoding-Answering; Sliding-Window Attention for Stable-Latency Incremental Processing |
 
 ## 💭 Streaming with Thinking
 
