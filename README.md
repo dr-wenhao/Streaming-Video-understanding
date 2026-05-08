@@ -109,6 +109,7 @@
 
 |  Date   |                            Title                             |                   Paper                   |                             Code                             |                           Comment                            |
 | :-----: | :----------------------------------------------------------: | :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 2026.04 | Progressive Online Video Understanding with Evidence-Aligned Timing and Transparent Decisions | [[pdf]](https://arxiv.org/pdf/2604.18459) | - | Thinking-QwenVL with Active Thinking Decision Maker (progress/confidence) for Evidence-Aligned Response Timing |
 | 2025.10 | Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video  | [[pdf]](https://arxiv.org/pdf/2510.14560) | [[GitHub]](https://github.com/SooLab/EyeWO) ![](https://img.shields.io/github/stars/SooLab/EyeWO.svg?style=social) | Weighted Interval Supervision & Uncertainty-Guided High-Resolution Requests |
 | 2025.02 | EgoSpeak: Learning When to Speak for Egocentric Conversational Agents in the Wild | [[pdf]](https://arxiv.org/pdf/2502.14892) | [[GitHub]](https://github.com/jun297/EgoSpeak) ![](https://img.shields.io/github/stars/jun297/EgoSpeak.svg?style=social) | Standalone Audio-Visual Frame-Level Three-Way Classifier (Background / Self / Other) with Anticipatory Prediction |
 
@@ -118,6 +119,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|Progressive Online Video Understanding with Evidence-Aligned Timing and Transparent Decisions|[[pdf]](https://arxiv.org/pdf/2604.18459)|-|Hierarchical Progressive Semantic Integration (HPSI) with Learnable Multi-Level Aggregation Tokens Propagated across Clips |
 |2026.03|CurveStream: Boosting Streaming Video Understanding in MLLMs via Curvature-Aware Hierarchical Visual Memory Management|[[pdf]](https://arxiv.org/pdf/2603.19571)|-|Curvature-Aware Scorer (Motion Variation + Geometric Curvature); EMA-Based K-Sigma Dynamic Thresholding; Hierarchical Clear/Blurred/Discard Memory with FIFO Eviction|
 |2026.03|StreamingClaw Technical Report|[[pdf]](https://arxiv.org/pdf/2603.22120)|-|Hierarchical Memory Evolution |
 |2026.03|StreamReady: Learning What to Answer and When in Long Streaming Videos|[[pdf]](https://arxiv.org/pdf/2603.08620)|-|3-Level Visual Memory Tree (FIFO-Centroid-Prototype) & Contextual Memory Bank |
@@ -154,6 +156,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|Decouple and Cache: KV Cache Construction for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2605.01858)|[[GitHub]](https://github.com/pangzhan27/DSCache) ![](https://img.shields.io/github/stars/pangzhan27/DSCache.svg?style=social)|Decoupled Streaming Cache (DSCache): Cumulative Past KV Cache + On-Demand Instant Cache with Position-Agnostic Encoding |
 |2026.02|Going Down Memory Lane: Scaling Tokens for Video Stream Understanding with Dynamic KV-Cache Memory|[[pdf]](https://arxiv.org/pdf/2602.18434)|[[GitHub]](https://github.com/vatsalag99/MemStream) ![](https://img.shields.io/github/stars/vatsalag99/MemStream.svg?style=social)|Adaptive Key Selection for Sparse Sliding-Window Encoding; Training-Free Retrieval MoE via Reciprocal Rank Fusion of Internal & External Signals|
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hash-Bit Hamming Clustering & Weighted Cumulative Sum Early-Exit Thresholding for Dynamic KV-Cache Retrieval; Hierarchical Memory Offloading |
 |2025.11|StreamKV: Streaming Video Question-Answering with Segment-based KV Cache Retrieval and Compression|[[pdf]](https://arxiv.org/pdf/2511.07278)|[[GitHub]](https://github.com/sou1p0wer/StreamKV) ![](https://img.shields.io/github/stars/sou1p0wer/StreamKV.svg?style=social)|Cosine Similarity-Based Dynamic Semantic Segmentation; Summary-Vector Representative Key Retrieval; Guidance-Prompt-Driven KV Compression with Layer-Adaptive Budget Allocation |
@@ -167,6 +170,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning|[[pdf]](https://arxiv.org/pdf/2604.17052)|[[GitHub]](https://github.com/Solus-sano/OASIS) ![](https://img.shields.io/github/stars/Solus-sano/OASIS.svg?style=social)|On-Demand Retrieval over Hierarchical Event Memory; Uncertainty-Triggered Controlled Refinement |
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Dual-Grained Memory (Streaming Memory + Concept Memory); Concept-Aware Retrieval with Query Rewriting for Personalized Concept Grounding|
 |2026.02|Vista: Scene-Aware Optimization for Streaming Video Question Answering under Post-Hoc Queries|[[pdf]](https://arxiv.org/pdf/2602.08448)|                              -                               |Scene-aware Segmentation; Temporal-Spatial Scene Token Compression; CPU Offloaded Full Frames with Query-conditioned Top-k Recall|
 |2026.02|WeaveTime: Stream from Earlier Frames into Emergent Memory in VideoLLMs|[[pdf]](https://arxiv.org/pdf/2602.22142)| [[GitHub]](https://github.com/zhangyl4/weavetime) ![](https://img.shields.io/github/stars/zhangyl4/weavetime.svg?style=social) |Uncertainty-Gated Hierarchical Retrieval with Entropy-Threshold Triggered Past Context Access|
@@ -190,6 +194,7 @@
 
 |  Date   |                            Title                             |                   Paper                   |                             Code                             |                           Comment                            |
 | :-----: | :----------------------------------------------------------: | :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 2026.04 | OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning | [[pdf]](https://arxiv.org/pdf/2604.17052) | [[GitHub]](https://github.com/Solus-sano/OASIS) ![](https://img.shields.io/github/stars/Solus-sano/OASIS.svg?style=social) | Hierarchical Event Memory with Intent-Driven Retrieval and Plug-and-Play Training-Free Reasoning |
 | 2026.02 | EventMemAgent: Hierarchical Event-Centric Memory for Online Video Understanding with Adaptive Tool Use | [[pdf]](https://arxiv.org/pdf/2602.15329) | [[GitHub]](https://github.com/lingcco/EventMemAgent) ![](https://img.shields.io/github/stars/lingcco/EventMemAgent.svg?style=social) | Event-Centric Dual-Layer Memory (STM with Online Event Segmentation & Reservoir Sampling + LTM with Structured Event Tuples) |
 | 2026.01 | Event-VStream: Event-Driven Real-Time Understanding for Long Video Streams | [[pdf]](https://arxiv.org/pdf/2601.15655) |                              -                               | Event-level Memory Bank; Merge-or-Append Event Consolidation |
 | 2025.12 | VideoScaffold: Elastic-Scale Visual Hierarchies for Streaming Video Understanding in MLLMs | [[pdf]](https://arxiv.org/pdf/2512.22226) | [[GitHub]](https://github.com/zheng980629/VideoScaffold) ![](https://img.shields.io/github/stars/zheng980629/VideoScaffold.svg?style=social) | Prediction-Guided Elastic-Scale Event Segmentation & Hierarchical Cross-Attention Event Consolidation |
@@ -247,6 +252,8 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|Decouple and Cache: KV Cache Construction for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2605.01858)|[[GitHub]](https://github.com/pangzhan27/DSCache) ![](https://img.shields.io/github/stars/pangzhan27/DSCache.svg?style=social)|Training-Free KV Cache Construction with Decoupled Past/Instant Caches and Position-Agnostic Encoding for Unbounded Streams |
+|2026.04|Don't Pause! Every prediction matters in a streaming video|[[pdf]](https://arxiv.org/pdf/2604.24317)|[[GitHub]](https://github.com/dibschat/SPOT-Bench) ![](https://img.shields.io/github/stars/dibschat/SPOT-Bench.svg?style=social)|AsynKV Long-Short Term KV Memory; Scaling Compute during Dead-Time for Streaming Adaptation |
 |2026.04|AURA: Always-On Understanding and Real-Time Assistance via Video Streams|[[pdf]](https://arxiv.org/pdf/2604.04184)|[[GitHub]](https://github.com/aurateam2026/AURA) ![](https://img.shields.io/github/stars/aurateam2026/AURA.svg?style=social)|Floating Video/QA Sliding Windows with Batched N' Chunk Truncation for Prefix KV-Cache Reuse and Lower TTFT |
 |2026.01|HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2601.14724)|[[GitHub]](https://github.com/haowei-freesky/HERMES) ![](https://img.shields.io/github/stars/haowei-freesky/HERMES.svg?style=social)|KV-Cache Reuse for Instant Query Response; Hierarchical Token Compression within Fixed Cache Budget |
 |2025.12|V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval|[[pdf]](https://arxiv.org/pdf/2512.12284)|-|Hardware-Software Co-Design with Dynamic KV Cache Retrieval Engine Accelerator; Pipelined KV Prediction-Retrieval Overlapped with LLM Computation |
@@ -270,6 +277,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.04|Don't Pause! Every prediction matters in a streaming video|[[pdf]](https://arxiv.org/pdf/2604.24317)|[[GitHub]](https://github.com/dibschat/SPOT-Bench) ![](https://img.shields.io/github/stars/dibschat/SPOT-Bench.svg?style=social)|SPOT-Bench with Multi-Turn Proactive Queries; Timeliness-F1 for Temporal Precision and Coverage |
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Frame-Level Personalization & Video-Level Personalization; Concept-Definition QA & Real-Time QA & Past-Time QA|
 |2026.03|StreamingEval: A Unified Evaluation Protocol towards Realistic Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.21493)|[[GitHub]](https://github.com/wwgTang-111/StreamingEval1) ![](https://img.shields.io/github/stars/wwgTang-111/StreamingEval1.svg?style=social)|Streaming Evaluation Protocol |
 |2026.03|HomeSafe-Bench: Evaluating Vision-Language Models on Unsafe Action Detection for Embodied Agents in Household|[[pdf]](https://arxiv.org/pdf/2603.11975)|[[GitHub]](https://github.com/pujiayue/HomeSafe-Bench) ![](https://img.shields.io/github/stars/pujiayue/HomeSafe-Bench.svg?style=social)|Unsafe Action Detection; Early Warning Timing; Severity Assessment |
