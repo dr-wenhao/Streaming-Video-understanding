@@ -92,6 +92,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|Response-G1: Explicit Scene Graph Modeling for Proactive Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2605.07575)|-|Fine-Tuning-Free Retrieval-Augmented Trigger Prompting with Query-Guided Scene Graph Evidence|
 |2026.03|FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2603.02096)|[[GitHub]](https://github.com/YiwengXie/FluxMem) ![](https://img.shields.io/github/stars/YiwengXie/FluxMem.svg?style=social)|Scene-Change Ratio Trigger Reusing Temporal Adjacency Selection Statistics |
 |2026.01|QueryStream: Advancing Streaming Video Understanding with Query-Aware Pruning and Proactive Response|[[pdf]](https://openreview.net/pdf?id=738HjJEbml)|-|Relevance-Triggered Active Response |
 |2026.01|Event-VStream: Event-Driven Real-Time Understanding for Long Video Streams|[[pdf]](https://arxiv.org/pdf/2601.15655)|-|Motion-Semantic-Prediction Boundary Score; Adaptive Threshold; Event-triggered Decoding |
@@ -170,6 +171,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|Response-G1: Explicit Scene Graph Modeling for Proactive Streaming Video Understanding|[[pdf]](https://arxiv.org/pdf/2605.07575)|-|Query-Guided Scene Graph Memory with Top-K Similarity Retrieval|
 |2026.04|OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning|[[pdf]](https://arxiv.org/pdf/2604.17052)|[[GitHub]](https://github.com/Solus-sano/OASIS) ![](https://img.shields.io/github/stars/Solus-sano/OASIS.svg?style=social)|On-Demand Retrieval over Hierarchical Event Memory; Uncertainty-Triggered Controlled Refinement |
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Dual-Grained Memory (Streaming Memory + Concept Memory); Concept-Aware Retrieval with Query Rewriting for Personalized Concept Grounding|
 |2026.02|Vista: Scene-Aware Optimization for Streaming Video Question Answering under Post-Hoc Queries|[[pdf]](https://arxiv.org/pdf/2602.08448)|                              -                               |Scene-aware Segmentation; Temporal-Spatial Scene Token Compression; CPU Offloaded Full Frames with Query-conditioned Top-k Recall|
