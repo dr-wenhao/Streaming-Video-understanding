@@ -50,7 +50,7 @@
 ## 📋 Technical Report
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.04|MiniCPM-o 4.5| [[pdf]](https://arxiv.org/pdf/2604.27393)|[[GitHub]](https://github.com/ByteDance-Seed/Seed2.0) ![](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o-Demo.svg?style=social)|New Full-Duplex and Proactive Multimodal Live Streaming Capability|
+|2026.04|MiniCPM-o 4.5| [[pdf]](https://arxiv.org/pdf/2604.27393)|[[GitHub]](https://github.com/OpenBMB/MiniCPM-o-Demo) ![](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o-Demo.svg?style=social)|New Full-Duplex and Proactive Multimodal Live Streaming Capability|
 |2026.02|Seed2.0|[[pdf]](https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed2.0) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed2.0.svg?style=social)|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ODVBench & ViSpeak |
 |2025.12|Seed1.8|[[pdf]](https://github.com/ByteDance-Seed/Seed-1.8/blob/main/Seed-1.8-Modelcard.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed-1.8) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed-1.8.svg?style=social)|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ViSpeak & StreamingBench & OmniMMI |
 
