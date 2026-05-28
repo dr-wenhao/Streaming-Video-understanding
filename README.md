@@ -46,6 +46,7 @@
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
 |2025.11|Live VLM WebUI|[[docs]](https://build.nvidia.com/spark/live-vlm-webui/overview)|[[GitHub]](https://github.com/NVIDIA-AI-IOT/live-vlm-webui) ![](https://img.shields.io/github/stars/NVIDIA-AI-IOT/live-vlm-webui.svg?style=social)|Real-Time Vision Language Model Interaction with Webcam Streaming |
+|-|火山引擎（实时音视频）|[[html]](https://www.volcengine.com/docs/6348/1408245?lang=zh)|-|turn-based; 周期性发送 ExternalTextToLLM 触发主动响应 |
 
 ## 📋 Technical Report
 |Date|Title|Paper|Code|Comment|
