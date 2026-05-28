@@ -49,12 +49,13 @@
 |-|火山引擎（实时音视频）|[[html]](https://www.volcengine.com/docs/6348/1408245?lang=zh)|-|turn-based; 周期性发送 ExternalTextToLLM 触发主动响应 |
 
 ## 📋 Technical Report
-|Date|Title|Paper|Code|Comment|
-|:---:|:---:|:---:|:---:|:---:|
-|2026.05|Interaction Models: A Scalable Approach to Human-AI Collaboration (Thinking Machines Lab)| [[html]](https://thinkingmachines.ai/blog/interaction-models/)| -|Time-aligned micro-turns |
-|2026.04|MiniCPM-o 4.5| [[pdf]](https://arxiv.org/pdf/2604.27393)|[[GitHub]](https://github.com/OpenBMB/MiniCPM-o-Demo) ![](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o-Demo.svg?style=social)|New Full-Duplex and Proactive Multimodal Live Streaming Capability|
-|2026.02|Seed2.0|[[pdf]](https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed2.0) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed2.0.svg?style=social)|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ODVBench & ViSpeak |
-|2025.12|Seed1.8|[[pdf]](https://github.com/ByteDance-Seed/Seed-1.8/blob/main/Seed-1.8-Modelcard.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed-1.8) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed-1.8.svg?style=social)|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ViSpeak & StreamingBench & OmniMMI |
+|Date|Title|Paper|Code|Demo|Comment|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|2026.05|Interaction Models: A Scalable Approach to Human-AI Collaboration (Thinking Machines Lab)| [[html]](https://thinkingmachines.ai/blog/interaction-models/)| - | - |Time-aligned micro-turns |
+|2026.04|MiniCPM-o 4.5| [[pdf]](https://arxiv.org/pdf/2604.27393)|[[GitHub]](https://github.com/OpenBMB/MiniCPM-o-Demo) ![](https://img.shields.io/github/stars/OpenBMB/MiniCPM-o-Demo.svg?style=social)|[[demo]](https://minicpmo45.modelbest.cn/omni)|New Full-Duplex and Proactive Multimodal Live Streaming Capability|
+|2025.09|Qwen3-Omni| [[pdf]](https://arxiv.org/pdf/2509.17765)|[[GitHub]](https://github.com/QwenLM/Qwen3-Omni) ![](https://img.shields.io/github/stars/QwenLM/Qwen3-Omni.svg?style=social) ; [[aliyun]](https://github.com/aliyun/alibabacloud-bailian-speech-demo/tree/master/samples/conversation/omni) ![](https://img.shields.io/github/stars/aliyun/alibabacloud-bailian-speech-demo.svg?style=social)|[[demo]](https://huggingface.co/spaces/Qwen/Qwen3-Omni-Demo)|New Full-Duplex and Proactive Multimodal Live Streaming Capability|
+|2026.02|Seed2.0|[[pdf]](https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed2.0) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed2.0.svg?style=social)|-|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ODVBench & ViSpeak |
+|2025.12|Seed1.8|[[pdf]](https://github.com/ByteDance-Seed/Seed-1.8/blob/main/Seed-1.8-Modelcard.pdf)|[[GitHub]](https://github.com/ByteDance-Seed/Seed-1.8) ![](https://img.shields.io/github/stars/ByteDance-Seed/Seed-1.8.svg?style=social)|-|Doubao Video Calling; OVBench & LiveSports-3K & OVOBench & ViSpeak & StreamingBench & OmniMMI |
 
 ## 💬 Proactive Interaction
 
