@@ -12,35 +12,39 @@
 📚 A curated collection of papers and open-source code repositories dedicated to the application of Vision-Language Models (VLMs) for streaming video.
 
 ## 📖 Contents
-- [🛠️ Project](#️-project)
-- [📋 Technical Report](#-technical-report)
-- [💬 Proactive Interaction](#-proactive-interaction)
-  - [Auxiliary Response Head](#auxiliary-response-head)
-  - [Generative Token-based Trigger](#generative-token-based-trigger)
-  - [RL-optimized Proactive Response](#rl-optimized-proactive-response)
-  - [Training-free / Feature-based Trigger](#training-free--feature-based-trigger)
-  - [Hybrid Trigger Framework](#hybrid-trigger-framework)
-  - [Learned Response Timing](#learned-response-timing)
-- [🧠 Long-term Memory Management](#-long-term-memory-management)
-  - [Hierarchical Multi-level Memory](#hierarchical-multi-level-memory)
-  - [Sliding-window / Eviction](#sliding-window--eviction)
-  - [Token Compression / Pruning](#token-compression--pruning)
-  - [KV-Cache Compression / Retrieval / Reuse](#kv-cache-compression--retrieval--reuse)
-  - [Retrieval-augmented Memory](#retrieval-augmented-memory)
-  - [Semantic/Textual Abstraction](#semantictextual-abstraction)
-  - [Event-centric Structured Memory](#event-centric-structured-memory)
-  - [Spatial / 3D Memory](#spatial--3d-memory)
-  - [Parametric / Fast-weight Memory](#parametric--fast-weight-memory)
-- [⚡ Real-time Inference](#-real-time-inference)
-  - [Encoding-Decoding Parallelism](#encoding-decoding-parallelism)
-  - [Selective Model Invocation](#selective-model-invocation)
-  - [Visual Token Reduction](#visual-token-reduction)
-  - [KV-Cache Optimization](#kv-cache-optimization)
-- [💭 Streaming with Thinking](#-streaming-with-thinking)
-- [📊 Benchmarks](#-benchmarks)
-- [📦 Training Datasets](#-training-datasets)
-- [📝 Survey](#-survey)
-- [🔗 Resources](#-resources)
+- [Awesome-VLM-Streaming-Video 🎬](#awesome-vlm-streaming-video-)
+  - [📒 Introduction](#-introduction)
+  - [📖 Contents](#-contents)
+  - [🛠️ Project](#️-project)
+  - [📋 Technical Report](#-technical-report)
+  - [💬 Proactive Interaction](#-proactive-interaction)
+    - [Auxiliary Response Head](#auxiliary-response-head)
+    - [Generative Token-based Trigger](#generative-token-based-trigger)
+    - [RL-optimized Proactive Response](#rl-optimized-proactive-response)
+    - [Training-free / Feature-based Trigger](#training-free--feature-based-trigger)
+    - [Hybrid Trigger Framework](#hybrid-trigger-framework)
+    - [Learned Response Timing](#learned-response-timing)
+  - [🧠 Long-term Memory Management](#-long-term-memory-management)
+    - [Hierarchical Multi-level Memory](#hierarchical-multi-level-memory)
+    - [Sliding-window / Eviction](#sliding-window--eviction)
+    - [Token Compression / Pruning](#token-compression--pruning)
+    - [KV-Cache Compression / Retrieval / Reuse](#kv-cache-compression--retrieval--reuse)
+    - [Retrieval-augmented Memory](#retrieval-augmented-memory)
+    - [Semantic/Textual Abstraction](#semantictextual-abstraction)
+    - [Event-centric Structured Memory](#event-centric-structured-memory)
+    - [Spatial / 3D Memory](#spatial--3d-memory)
+    - [Parametric / Fast-weight Memory](#parametric--fast-weight-memory)
+  - [⚡ Real-time Inference](#-real-time-inference)
+    - [Encoding-Decoding Parallelism](#encoding-decoding-parallelism)
+    - [Selective Model Invocation](#selective-model-invocation)
+    - [Visual Token Reduction](#visual-token-reduction)
+    - [KV-Cache Optimization](#kv-cache-optimization)
+  - [💭 Streaming with Thinking](#-streaming-with-thinking)
+  - [📊 Benchmarks](#-benchmarks)
+  - [📦 Training Datasets](#-training-datasets)
+  - [📝 Survey](#-survey)
+  - [🔗 Resources](#-resources)
+  - [☎️ We're Hiring!](#️-were-hiring)
 
 ## 🛠️ Project
 |Date|Title|Paper|Code|Comment|
@@ -65,6 +69,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|MLLM-as-a-trigger over early-decoding hidden states for Respond/Wait without explicit \<silence\> tokens or external routers |
 |2026.03|Proact-VL: A Proactive VideoLLM for Real-Time AI Companions|[[pdf]](https://arxiv.org/pdf/2603.03447)|[[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social)|\<\|FLAG\|\>Token Response Head with Transition-Smoothed Classification & Stability Regularization |
 |2026.03|StreamReady: Learning What to Answer and When in Long Streaming Videos|[[pdf]](https://arxiv.org/pdf/2603.08620)|-|Learnable \<RDY\> Token with Readiness Head for Evidence-Gated Response Triggering |
 |2025.05|StreamBridge: Turning Your Offline Video Large Language Model into a Proactive Streaming Assistant|[[pdf]](https://arxiv.org/pdf/2505.05467)|[[GitHub]](https://github.com/apple/ml-streambridge) ![](https://img.shields.io/github/stars/apple/ml-streambridge.svg?style=social)|Activation Model via \<ACT\> Token with Binary Score Head |
@@ -90,6 +95,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|StreamPro: From Reactive Perception to Proactive Decision-Making in Streaming Video|[[pdf]](https://arxiv.org/pdf/2605.16381)|-|Two-stage proactive training with CB-Stream Loss for SFT and GRPO with turn-level & trajectory-level rewards |
 |2026.03|Thinking in Streaming Video|[[pdf]](https://arxiv.org/pdf/2603.12938)|[[GitHub]](https://github.com/johncaged/ThinkStream) ![](https://img.shields.io/github/stars/johncaged/ThinkStream.svg?style=social)|Watch-Think-Speak with \<silent\> & \<response\> Action Tokens; Streaming RLVR (Format + Time + Accuracy Reward) |
 |2026.01|Learning to Respond: A Large-Scale Benchmark and Progressive Learning Framework for Trigger-Centric Online Video Understanding|[[pdf]](https://openreview.net/pdf?id=gmpnSSiJt7)|-|Trigger-Centric Online Video Understanding |
 |2025.12|MMDuet2: Enhancing Proactive Interaction of Video MLLMs with Multi-Turn Reinforcement Learning|[[pdf]](https://arxiv.org/pdf/2512.06810)|[[GitHub]](https://github.com/yellow-binary-tree/MMDuet2) ![](https://img.shields.io/github/stars/yellow-binary-tree/MMDuet2.svg?style=social)|Text-to-Text "NO REPLY" Response Decision with Multi-Objective Reward (PAUC + Replication + In-Span + Prefix) GRPO |
@@ -126,6 +132,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|Multimodal evidence-guided long-short term memory with dense recent observations and sparse historical evidence under a fixed budget |
 |2026.04|Progressive Online Video Understanding with Evidence-Aligned Timing and Transparent Decisions|[[pdf]](https://arxiv.org/pdf/2604.18459)|-|Hierarchical Progressive Semantic Integration (HPSI) with Learnable Multi-Level Aggregation Tokens Propagated across Clips |
 |2026.03|CurveStream: Boosting Streaming Video Understanding in MLLMs via Curvature-Aware Hierarchical Visual Memory Management|[[pdf]](https://arxiv.org/pdf/2603.19571)|-|Curvature-Aware Scorer (Motion Variation + Geometric Curvature); EMA-Based K-Sigma Dynamic Thresholding; Hierarchical Clear/Blurred/Discard Memory with FIFO Eviction|
 |2026.03|StreamingClaw Technical Report|[[pdf]](https://arxiv.org/pdf/2603.22120)|-|Hierarchical Memory Evolution |
@@ -285,6 +292,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
+|2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|SOVBench for online multi-turn omni-modal evaluation with SOVBench-O and SOVBench-T |
 |2026.04|Don't Pause! Every prediction matters in a streaming video|[[pdf]](https://arxiv.org/pdf/2604.24317)|[[GitHub]](https://github.com/dibschat/SPOT-Bench) ![](https://img.shields.io/github/stars/dibschat/SPOT-Bench.svg?style=social)|SPOT-Bench with Multi-Turn Proactive Queries; Timeliness-F1 for Temporal Precision and Coverage |
 |2026.03|RIVER: A Real-Time Interaction Benchmark for Video LLMs|[[pdf]](https://arxiv.org/pdf/2603.03985)|[[GitHub]](https://github.com/OpenGVLab/RIVER) ![](https://img.shields.io/github/stars/OpenGVLab/RIVER.svg?style=social)|Memory & Perception & Anticipation|
 |2026.03|PEARL: Personalized Streaming Video Understanding Model|[[pdf]](https://arxiv.org/pdf/2603.20422)|[[GitHub]](https://github.com/Yuanhong-Zheng/PEARL) ![](https://img.shields.io/github/stars/Yuanhong-Zheng/PEARL.svg?style=social)|Frame-Level Personalization & Video-Level Personalization; Concept-Definition QA & Real-Time QA & Past-Time QA|
@@ -297,6 +305,7 @@
 |2025.12|StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos|[[pdf]](https://arxiv.org/pdf/2512.01707)|[[GitHub]](https://github.com/daeunni/StreamGaze) ![](https://img.shields.io/github/stars/daeunni/StreamGaze.svg?style=social)|Gaze-Guided Streaming Data; Past & Present & Proactive |
 |2025.10|Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?|[[pdf]](https://arxiv.org/pdf/2511.21998)|[[GitHub]](https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval) ![](https://img.shields.io/github/stars/Qualcomm-AI-research/qualcomm_interactive_cooking_eval.svg?style=social)|Qualcomm Interactive Cooking|
 |2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video|[[pdf]](https://arxiv.org/pdf/2510.14560)|[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|Explicit Proactives; Implicit Proactive; Contextual Proactive|
+|2025.09|StreamForest: Efficient Online Video Understanding with Persistent Event Memory|[[pdf]](https://arxiv.org/pdf/2509.24871)|[[GitHub]](https://github.com/MCG-NJU/StreamForest) ![](https://img.shields.io/github/stars/MCG-NJU/StreamForest.svg?style=social)|ODV-Bench for online autonomous-driving video understanding; Static Target / Dynamic Target / Event-oriented tasks |
 |2025.07|OST-Bench: Evaluating the Capabilities of MLLMs in Online Spatio-temporal Scene Understanding|[[pdf]](https://arxiv.org/pdf/2507.07984)|[[GitHub]](https://github.com/InternRobotics/OST-Bench) ![](https://img.shields.io/github/stars/InternRobotics/OST-Bench.svg?style=social)|Agent State; Agent Visible Info; Agent-Object Spatial Relationship |
 |2025.07|ProactiveVideoQA: A Comprehensive Benchmark Evaluating Proactive Interactions in Video Large Language Models|[[pdf]](https://arxiv.org/pdf/2507.09313)|[[GitHub]](https://github.com/yellow-binary-tree/ProactiveVideoQA) ![](https://img.shields.io/github/stars/yellow-binary-tree/ProactiveVideoQA.svg?style=social)|Proactive Web-Video QA; Proactive Ego-Centric Video QA; Proactive TV-Series Video QA; Proactive Video Anomaly Detection |
 |2025.07|Chat with AI: The Surprising Turn of Real-time Video Communication from Human to AI|[[pdf]](https://arxiv.org/pdf/2507.10510)|[[GitHub]](https://github.com/JiangkaiWu/DeViBench) ![](https://img.shields.io/github/stars/JiangkaiWu/DeViBench.svg?style=social)|DeViBench |
@@ -326,6 +335,7 @@
 |2025.10|StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA|[[pdf]](https://arxiv.org/pdf/2510.25332)|[[GitHub]](https://github.com/Fleeting-hyh/StreamingCoT) ![](https://img.shields.io/github/stars/Fleeting-hyh/StreamingCoT.svg?style=social)|Hierarchical Video Dense Captioning; Dynamic Question-Answer Pairs Construction; Multimodal Chain-of-Thought Generation |
 |2025.10|StreamingVLM: Real-Time Understanding for Infinite Video Streams|[[pdf]](https://arxiv.org/pdf/2510.09608)|[[GitHub]](https://github.com/mit-han-lab/streaming-vlm) ![](https://img.shields.io/github/stars/mit-han-lab/streaming-vlm.svg?style=social)|Sports; Narration |
 |2025.10|Eyes Wide Open: Ego Proactive Video-LLM for Streaming Video|[[pdf]](https://arxiv.org/pdf/2510.14560)|[[GitHub]](https://github.com/zhangyl4/EyeWO) ![](https://img.shields.io/github/stars/zhangyl4/EyeWO.svg?style=social)|Explicit Proactive Tasks; Implicit Proactive Tasks; Contextual Proactive Tasks |
+|2025.09|StreamForest: Efficient Online Video Understanding with Persistent Event Memory|[[pdf]](https://arxiv.org/pdf/2509.24871)|[[GitHub]](https://github.com/MCG-NJU/StreamForest) ![](https://img.shields.io/github/stars/MCG-NJU/StreamForest.svg?style=social)|Fine-grained Real-time Perception, Motion Prediction|
 |2025.06|Proactive Assistant Dialogue Generation from Streaming Egocentric Videos|[[pdf]](https://arxiv.org/pdf/2506.05904)|[[GitHub]](https://github.com/pro-assist/ProAssist) ![](https://img.shields.io/github/stars/pro-assist/ProAssist.svg?style=social)|Multi-Round Dialogue |
 |2025.04|LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale|[[pdf]](https://arxiv.org/pdf/2504.16030)|[[GitHub]](https://github.com/showlab/livecc) ![](https://img.shields.io/github/stars/showlab/livecc.svg?style=social)|ASR Transcripts |
 |2025.03|AssistPDA: An Online Video Surveillance Assistant for Video Anomaly Prediction, Detection, and Analysis|[[pdf]](https://arxiv.org/pdf/2503.21904)|-|Anomaly Prediction; Anomaly Detection; Anomaly Analysis |
