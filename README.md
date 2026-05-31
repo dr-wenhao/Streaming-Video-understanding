@@ -69,7 +69,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|MLLM-as-a-trigger over early-decoding hidden states for Respond/Wait without explicit \<silence\> tokens or external routers |
+|2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|Cross-Attention Trigger over early-decoding hidden states with a trained Respond/Wait classification head|
 |2026.03|Proact-VL: A Proactive VideoLLM for Real-Time AI Companions|[[pdf]](https://arxiv.org/pdf/2603.03447)|[[GitHub]](https://github.com/microsoft/AnthropomorphicIntelligence/tree/main/Proact-VL) ![](https://img.shields.io/github/stars/microsoft/AnthropomorphicIntelligence.svg?style=social)|\<\|FLAG\|\>Token Response Head with Transition-Smoothed Classification & Stability Regularization |
 |2026.03|StreamReady: Learning What to Answer and When in Long Streaming Videos|[[pdf]](https://arxiv.org/pdf/2603.08620)|-|Learnable \<RDY\> Token with Readiness Head for Evidence-Gated Response Triggering |
 |2025.05|StreamBridge: Turning Your Offline Video Large Language Model into a Proactive Streaming Assistant|[[pdf]](https://arxiv.org/pdf/2505.05467)|[[GitHub]](https://github.com/apple/ml-streambridge) ![](https://img.shields.io/github/stars/apple/ml-streambridge.svg?style=social)|Activation Model via \<ACT\> Token with Binary Score Head |
