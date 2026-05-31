@@ -132,7 +132,7 @@
 
 |Date|Title|Paper|Code|Comment|
 |:---:|:---:|:---:|:---:|:---:|
-|2026.05|Semantic-Aware Adaptive Visual Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/abs/2605.07897)|-|Multimodal evidence-guided long-short term memory with dense recent observations and sparse historical evidence under a fixed budget |
+|2026.05|Semantic-Aware Adaptive Visual Memory for Streaming Video Understanding|[[pdf]](https://arxiv.org/abs/2605.07897)|[[GitHub]](https://github.com/wuhang03/savemem) ![]|Multimodal evidence-guided long-short term memory with dense recent observations and sparse historical evidence under a fixed budget |
 |2026.05|StreamOV: Streaming Omni-Video Understanding via Evidence-Guided Memory and Response Triggering|[[pdf]](https://arxiv.org/pdf/2605.25621)|-|Multimodal evidence-guided long-short term memory with dense recent observations and sparse historical evidence under a fixed budget |
 |2026.04|Progressive Online Video Understanding with Evidence-Aligned Timing and Transparent Decisions|[[pdf]](https://arxiv.org/pdf/2604.18459)|-|Hierarchical Progressive Semantic Integration (HPSI) with Learnable Multi-Level Aggregation Tokens Propagated across Clips |
 |2026.03|CurveStream: Boosting Streaming Video Understanding in MLLMs via Curvature-Aware Hierarchical Visual Memory Management|[[pdf]](https://arxiv.org/pdf/2603.19571)|-|Curvature-Aware Scorer (Motion Variation + Geometric Curvature); EMA-Based K-Sigma Dynamic Thresholding; Hierarchical Clear/Blurred/Discard Memory with FIFO Eviction|
@@ -356,5 +356,4 @@
 - [sotayang/Awesome-Streaming-Video-Understanding](https://github.com/sotayang/Awesome-Streaming-Video-Understanding)
 - [LJungang/Awesome-Video-Reasoning-Landscape](https://github.com/LJungang/Awesome-Video-Reasoning-Landscape)
 
-## ☎️ We're Hiring!
-We're hiring multimodal research scientists and interns at JD Explore Academy! If you have top-tier publications and are passionate about video understanding and VLMs, please send your resume to: siqingyi.phoebus@jd.com. We'd love to hear from you!
+
